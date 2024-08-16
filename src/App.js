@@ -1,7 +1,7 @@
-import { React, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { ThemeContext } from "@emotion/react";
+import { React, useState } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { CssBaseline, ThemeProvider } from "@mui/material"
+import { ThemeContext } from "./utils/ThemeContext";
 import Main from "./pages/Main"
 import Test from "./pages/Test"
 
