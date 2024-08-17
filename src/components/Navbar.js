@@ -8,7 +8,9 @@ import {
     Toolbar, 
     Button,
     Typography,
-    styled
+    styled,
+    Slide,
+    useTheme
 } from '@mui/material';
 
 
@@ -34,19 +36,27 @@ const StyledAppBarButton = styled(Button)(({ theme }) => ({
 }));
 
 const StyledAppBarLink = styled(Button)(({ theme }) => ({
-    color: theme.palette.textMain.main + " !important",
-    transform: "none",
-    cursor: "pointer",
-    fontSize: "1.2rem",
-    padding: "0.5rem",
-    "&:hover": {
-      color: theme.palette.textSecondary.main + " !important",
-      transform: "translateY(-2px)",
-    },
+    
+    textDecoration: "none",
+    "& p": {
+        color: theme.palette.textMain.main + " !important",
+        transform: "none",
+        transition: "transform 150ms ease-in-out 0s !important",
+        cursor: "pointer",
+        fontSize: "1.2rem",
+        padding: "0.5rem",
+        textTransform: 'none',
+        "&:hover": {
+            color: theme.palette.textSecondary.main + " !important",
+            transform: "translateY(-2px)",
+        },
+    }
+    
 }));
 
 const Navbar = () => {
     const { theme, setTheme } = useContext(ThemeContext);
+    const MuiTheme = useTheme();
 
     useEffect(() => {
         window.localStorage.setItem("theme", theme);
@@ -54,12 +64,14 @@ const Navbar = () => {
 
     const navbar = (
         <>
-            <StyledAppBarButton
-                aria-label="Change theme"
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-                {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
-            </StyledAppBarButton>
+            <div>
+                <StyledAppBarButton
+                    aria-label="Change theme"
+                    onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                >
+                    {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
+                </StyledAppBarButton>
+            </div>
             
             {navbarData.map((data) => (
                 <div key={data.id}>
@@ -73,17 +85,18 @@ const Navbar = () => {
     );
 
     return (
-        <StyledAppBar position='fixed'>
+            <StyledAppBar position='fixed'>
             <StyledAppBarContainer>
                 <Toolbar>
-                    <Typography variant='h6'>
+                    <Typography variant='h6' style={{color: MuiTheme.palette.textMain.main, flexGrow: 1}} >
                         Caner Ates
                     </Typography>
 
                     { navbar }
                 </Toolbar>
             </StyledAppBarContainer>
-        </StyledAppBar>
+            </StyledAppBar>
+        
     )
 }
 

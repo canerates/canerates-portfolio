@@ -1,0 +1,29 @@
+[
+    {
+        "id": "0",
+        "title": "Chamber Interior Design",
+        "image": "../assets/projects/chamber.png",
+        "description": "Create your 3D room layout with textured floor and walls in real-time. Place your 3D furniture models and design your room. Give realistic looking with user-defined lighting options.",
+        "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "Combine", "Metal SL"],
+        "websiteLink": "https://chamberapp.canerates.com",
+        "appstoreLink": "."
+      },
+      {
+        "id": "1",
+        "title": "MobleAR: Real-time Design 3D",
+        "image": "../assets/projects/moblear.png",
+        "description": "Moble AR allows you to upload your own USDZ models and use them to design your real world environment.",
+        "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "CoreData"],
+        "websiteLink": "https://moblear.canerates.com",
+        "appstoreLink": "https://apps.apple.com/app/moblear-real-time-design-3d/id6479243434"
+      },
+      {
+        "id": "2",
+        "title": "PasswOCD: Password Generator",
+        "image": "../assets/projects/passwocd.png",
+        "description": "Stop using the same password for all your accounts. PasswOCD is your go-to app for generating super-strong, unique passwords for each of your accounts and platforms.",
+        "skills": ["Swift", "SwiftUI", "CoreData", "CloudKit"],
+        "websiteLink": "https://passwocd.canerates.com",
+        "appstoreLink": "https://apps.apple.com/app/passwocd-password-generator/id6529549759"
+      }
+]
