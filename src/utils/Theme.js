@@ -51,7 +51,7 @@ export const lightTheme = createTheme({
       main: "#FFFFFF",
     },
     backgroundSecondary: {
-      main: "#5BC0BE",
+      main: "#bdc3c7",
     },
     buttonHover: {
       main: "#3E9F9D",

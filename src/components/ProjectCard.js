@@ -1,15 +1,17 @@
 import React from 'react'
-import { Typography, Container, Grid, styled } from "@mui/material";
-import LaunchIcon from "@mui/icons-material/Launch";
-import AppStoreIcon from "@mui/icons-material/Apple";
+import { Typography, Container, Grid, styled } from "@mui/material"
+import LaunchIcon from "@mui/icons-material/Launch"
+import AppStoreIcon from "@mui/icons-material/Apple"
+import YoutubeIcon from "@mui/icons-material/YouTube"
 
 const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
   position: "relative",
   display: "flex",
   height: "280px",
   marginBottom: "2.5rem",
-  borderRadius: "1rem",
-  border: `0.25rem solid ${theme.palette.backgroundSecondary.main}70`,
+  borderRadius: "1.5rem",
+  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.4)",
+  // border: `0.25rem solid ${theme.palette.backgroundSecondary.main}70`,
   backgroundColor: `${theme.palette.backgroundSecondary.main}70`,
   paddingTop: "0 !important",
   paddingLeft: "0 !important",
@@ -129,13 +131,30 @@ const StyledProjectsAppStoreLink = styled("a")({
   "& svg": {
     padding: "0",
     minWidth: "0",
-    marginTop: "0.43rem",
-    transform: "scale(0.90)",
+    marginTop: "0.5rem",
+    transform: "scale(1)",
     transition: "transform 200ms",
   },
   "&:hover": {
     "& svg": {
       transform: "scale(1.15)",
+    },
+  },
+});
+
+const StyledProjectsYoutubeLink = styled("a")({
+  color: "inherit",
+  "& svg": {
+    padding: "0",
+    minWidth: "0",
+    marginTop: "0.5rem",
+    marginLeft: "0.2rem",
+    transform: "scale(1.4)",
+    transition: "transform 200ms",
+  },
+  "&:hover": {
+    "& svg": {
+      transform: "scale(1.6)",
     },
   },
 });
@@ -180,6 +199,14 @@ export const ProjectCard = ({ project }) => {
             >
               <AppStoreIcon />
             </StyledProjectsAppStoreLink>
+          )}
+          {project.youtubeLink && (
+            <StyledProjectsYoutubeLink
+              href={project.youtubeLink}
+              target="_blank"
+            >
+              <YoutubeIcon />
+            </StyledProjectsYoutubeLink>
           )}
         </StyledProjectsTextField>
       </StyledProjectsGridItem>

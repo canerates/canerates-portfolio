@@ -5,7 +5,8 @@
         "image": "../images/chamber.png",
         "description": "Create your 3D room layout with textured floor and walls in real-time. Place your 3D furniture models and add lighting. ",
         "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "Combine", "Metal SL"],
-        "websiteLink": "https://chamberapp.canerates.com"
+        "websiteLink": "https://chamberapp.canerates.com",
+        "youtubeLink": "https://www.youtube.com/watch?v=NcTS3BAcNts"
       },
       {
         "id": "1",
