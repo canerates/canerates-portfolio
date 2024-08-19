@@ -1,6 +1,7 @@
 import { React } from "react"
 import { Container, styled } from "@mui/material";
 import Navbar from "../components/Navbar"
+import Projects from "../sections/Projects";
 
 const StyledMainPage = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.main,
@@ -14,10 +15,10 @@ const Main = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <StyledMainPage>
         <StyledMainContainer>
-          
+          <Projects />
         </StyledMainContainer>
       </StyledMainPage>
     </>
