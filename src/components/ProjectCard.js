@@ -1,64 +1,8 @@
 import React from 'react'
-import { Typography, Container, Grid, styled } from "@mui/material"
+import { Typography, styled } from "@mui/material"
 import LaunchIcon from "@mui/icons-material/Launch"
 import AppStoreIcon from "@mui/icons-material/Apple"
 import YoutubeIcon from "@mui/icons-material/YouTube"
-
-const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
-  position: "relative",
-  display: "flex",
-  height: "280px",
-  marginBottom: "2.5rem",
-  borderRadius: "1.5rem",
-  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.4)",
-  // border: `0.25rem solid ${theme.palette.backgroundSecondary.main}70`,
-  backgroundColor: `${theme.palette.backgroundSecondary.main}70`,
-  paddingTop: "0 !important",
-  paddingLeft: "0 !important",
-  overflow: "hidden",
-  alignItems: "flex-end",
-  transform: "none",
-  transition: "transform 150ms ease-in-out 0s",
-  "&:hover": {
-    transform: "scale(1.02)",
-    transition: "transform 150ms ease-in-out 0s",
-    [theme.breakpoints.up("md")]: {
-      "& div": {
-        opacity: "1",
-        transform: "translateY(-10%)",
-        transition:
-          "opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s",
-      },
-    },
-    "&::after": {
-      opacity: "0.9 !important",
-      content: "''",
-      position: "absolute",
-      inset: "0px",
-
-      background:
-        "linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 70%)",
-    },
-  },
-  [theme.breakpoints.down("md")]: {
-    maxWidth: "500px",
-    "&::after": {
-      opacity: "0.9 !important",
-      content: "''",
-      position: "absolute",
-      inset: "0px",
-
-      background:
-        "linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 70%)",
-    },
-    "& div": {
-      opacity: "1",
-    },
-  },
-  [theme.breakpoints.down("sm")]: {
-    height: "260px !important",
-  },
-}));
 
 const StyledProjectsImg = styled("img")(({ theme }) => ({
   transform: "scale(1.01)",
@@ -159,14 +103,9 @@ const StyledProjectsYoutubeLink = styled("a")({
   },
 });
 
-export const ProjectCard = ({ project }) => {
+export const ProjectCard = ({ project, ref }) => {
   return (
-    
-      <StyledProjectsGridItem
-        item
-        xs={12}
-        sm={5.5}
-      >
+      <>
         <StyledProjectsImg
           alt={`Image of ${project.title}`}
           src={project.image}
@@ -209,6 +148,6 @@ export const ProjectCard = ({ project }) => {
             </StyledProjectsYoutubeLink>
           )}
         </StyledProjectsTextField>
-      </StyledProjectsGridItem>
+      </>
   )
 }

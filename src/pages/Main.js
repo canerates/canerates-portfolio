@@ -19,6 +19,9 @@ const Main = () => {
       <StyledMainPage>
         <StyledMainContainer>
           <Projects />
+          <Projects />
+          <Projects />
+          <Projects />
         </StyledMainContainer>
       </StyledMainPage>
     </>

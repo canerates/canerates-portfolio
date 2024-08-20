@@ -62,6 +62,10 @@ export const lightTheme = createTheme({
     textSecondary: {
       main: "#53739A",
     },
+    cardShadow: {
+      main: "#2c3e50",
+      hover: "#2980b9",
+    },
   },
 });
 
@@ -126,6 +130,10 @@ export const darkTheme = createTheme({
     },
     textSecondary: {
       main: "#6FFFE9",
+    },
+    cardShadow: {
+      main: "#3A506B",
+      hover: "#53739A",
     },
   },
 });
