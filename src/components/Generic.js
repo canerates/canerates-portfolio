@@ -1,4 +1,4 @@
-import { styled, Container } from "@mui/material";
+import { styled, Container } from "@mui/material"
 
 export const StyledGenericRoot = styled("section")(({ theme }) => ({
     minHeight: "100vh",

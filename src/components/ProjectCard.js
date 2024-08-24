@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typography, styled } from "@mui/material"
 import LaunchIcon from "@mui/icons-material/Launch"
 import AppStoreIcon from "@mui/icons-material/Apple"
@@ -103,7 +102,7 @@ const StyledProjectsYoutubeLink = styled("a")({
   },
 });
 
-export const ProjectCard = ({ project, ref }) => {
+export const ProjectCard = ({ project }) => {
   return (
       <>
         <StyledProjectsImg

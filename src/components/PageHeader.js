@@ -1,4 +1,3 @@
-import React from 'react'
 import { styled, Typography } from "@mui/material";
 
 const isFirefox = /Firefox/i.test(navigator.userAgent);

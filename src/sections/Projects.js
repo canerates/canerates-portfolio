@@ -1,13 +1,12 @@
-import React from 'react'
-import * as Scroll from "react-scroll";
-import { Container, Grid, styled } from "@mui/material";
-import { useInView, InView } from "react-intersection-observer";
-import "animate.css";
+import { Container, Grid, styled } from "@mui/material"
+import * as Scroll from "react-scroll"
+import { useInView, InView } from "react-intersection-observer"
+import "animate.css"
 
-import { StyledGenericRoot, StyledGenericContainer } from '../components/Generic';
-import PageHeader from '../components/PageHeader';
-import { ProjectCard } from '../components/ProjectCard';
-import projects from "../content/projects.json";
+import { StyledGenericRoot, StyledGenericContainer } from '../components/Generic'
+import PageHeader from '../components/PageHeader'
+import { ProjectCard } from '../components/ProjectCard'
+import projects from "../content/projects.json"
 
 const StyledProjectsContainer = styled(Container)(({ theme }) => ({
   marginTop: "3rem",
@@ -109,7 +108,7 @@ const Projects = () => {
             projectsContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="Projects" subText="Here are my highlighted projects.." />
+          <PageHeader title="Projects" subText="What I have done.." />
         </StyledGenericContainer>
 
         <StyledProjectsContainer>
