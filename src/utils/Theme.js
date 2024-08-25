@@ -66,6 +66,10 @@ export const lightTheme = createTheme({
       main: "#2c3e50",
       hover: "#2980b9",
     },
+    switchTheme: {
+      backgroundImage: `linear-gradient(to bottom, aqua, skyblue)`,
+      notchBackgroundColor: "#FFCC33"
+    },
   },
 });
 
@@ -134,6 +138,10 @@ export const darkTheme = createTheme({
     cardShadow: {
       main: "#3A506B",
       hover: "#53739A",
+    },
+    switchTheme: {
+      backgroundImage: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
+      notchBackgroundColor: "#040348"
     },
   },
 });

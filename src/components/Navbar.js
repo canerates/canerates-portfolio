@@ -50,16 +50,17 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
 }));
 
 const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
-  width: 62,
+  width: 65,
   height: 34,
-  padding: 7,
+  padding: 0,
+  margin: 10,
   '& .MuiSwitch-switchBase': {
-    margin: 1,
+    margin: '2px -3px',
     padding: 0,
     transform: 'translateX(6px)',
     '&.Mui-checked': {
       color: '#fff',
-      transform: 'translateX(22px)',
+      transform: 'translateX(35px)',
       '& .MuiSwitch-thumb:before': {
         backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
           '#fff',
@@ -67,14 +68,14 @@ const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
       },
       '& + .MuiSwitch-track': {
         opacity: 1,
-        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+        backgroundColor: "#ffffff",
       },
     },
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
-    width: 32,
-    height: 32,
+    backgroundColor: theme.palette.switchTheme.notchBackgroundColor,
+    width: 30,
+    height: 30,
     '&::before': {
       content: "''",
       position: 'absolute',
@@ -91,20 +92,8 @@ const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
   },
   '& .MuiSwitch-track': {
     opacity: 1,
-    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-    borderRadius: 20 / 2,
-  },
-}));
-
-const StyledAppBarButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.textMain.main + " !important",
-  padding: "10px 8px",
-  transform: "none",
-  cursor: "pointer",
-  transition: "transform 150ms ease-in-out 0s !important",
-  "&:hover": {
-    color: theme.palette.textSecondary.main + " !important",
-    transform: "translateY(-2px)",
+    backgroundImage: theme.palette.switchTheme.backgroundImage,
+    borderRadius: 17,
   },
 }));
 
@@ -194,7 +183,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const collapse = useMediaQuery(MuiTheme.breakpoints.down("sm"));
-  const [checked, setChecked] = useState(theme == "dark");
+  const [checked, setChecked] = useState(theme === "dark");
 
 
   useEffect(() => {
@@ -237,7 +226,7 @@ const Navbar = () => {
   useEffect(() => {
     window.localStorage.setItem("theme", theme);
   }, [theme]);
-  
+
   const handleChange = (event) => {
     setChecked(event.target.checked);
     setTheme(event.target.checked === true ? "dark" : "light")
@@ -353,18 +342,12 @@ const Navbar = () => {
               </StyledAppBarDrawerLink>
             </StyledDrawerList>
           ))}
-          <List>
-            <Button
-              sx={{
-                color: MuiTheme.palette.textMain.main,
-                animation: "fadeIn",
-                animationDuration: "2s",
-              }}
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-              {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
-            </Button>
-          </List>
+
+          <StyledThemeSwitch
+            aria-label="Change theme"
+            checked={checked}
+            onChange={handleChange}
+          />
         </Box>
       </StyledDrawer>
     </>
