@@ -1,8 +1,6 @@
 import { React, useState, useEffect, useContext } from "react"
 import { ThemeContext } from "../utils/ThemeContext"
 import navbarData from "../content/navbar.json"
-import WbSunnyIcon from "@mui/icons-material/WbSunny"
-import DarkModeIcon from "@mui/icons-material/DarkMode"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import { Link } from "react-scroll";
@@ -184,7 +182,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const collapse = useMediaQuery(MuiTheme.breakpoints.down("sm"));
   const [checked, setChecked] = useState(theme === "dark");
-
 
   useEffect(() => {
     setTimeout(() => {
