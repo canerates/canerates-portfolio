@@ -108,7 +108,7 @@ const Projects = () => {
             projectsContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="Projects" subText="What I have done.." />
+          <PageHeader title="Projects" subText="Here are the some projects I have done over the past years.." />
         </StyledGenericContainer>
 
         <StyledProjectsContainer>

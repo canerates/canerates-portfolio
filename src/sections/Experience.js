@@ -52,7 +52,7 @@ const StyledExperienceTimelineItem = styled(Grid)(({ theme }) => ({
 const Experience = () => {
 
   const [experienceContainer, experienceContainerInView] = useInView({
-    threshold: 0.4,
+    threshold: 0.2,
     triggerOnce: true,
   });
 

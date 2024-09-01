@@ -267,7 +267,7 @@ const Navbar = () => {
           }
           target="_blank"
         >
-          <Typography>Resume</Typography>
+          <Typography>resume</Typography>
         </StyledResumeLink>
       </div>
     </>
@@ -323,7 +323,7 @@ const Navbar = () => {
                   animationDuration: "2s",
                 }}
               >
-                Resume
+                resume
               </Typography>
             </StyledResumeLink>
           </StyledDrawerList>

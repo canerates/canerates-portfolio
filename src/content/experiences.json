@@ -1,66 +1,106 @@
 {
-    "works": [
-      {
-        "id": "0",
-        "title": "Software Engineer",
-        "company": "Vestel Electronics R&D Corp - Vestel Group",
-        "location": "Istanbul, Turkey",
-        "startDate": "02/2014",
-        "endDate": "08/2017",
-        "timeStamp": "3 yrs 7 mos",
-        "achievements": [
-          "Design, development, and maintenance of Vestel Smart TV Portal: a multi- language, multi-branded, cross-browser worldwide entertainment web portal for over 6 million users.",
-          "Designed and developed Smart TV Portal user management panel and electronic information booklet."
-        ]
-      },
-      {
-        "id": "1",
-        "title": "Software Engineer",
-        "company": "Power Active Co. Ltd.",
-        "location": "Taipei, Taiwan",
-        "startDate": "09/2019",
-        "endDate": "09/2020",
-        "timeStamp": "1 yr",
-        "achievements": [
-          "Design and development of iOS application to control IP Cameras and NVR devices. Integrating C++ SDK to iOS Swift application.",
-          "Design and development of multi-language, multi-role based e-commerce website."
-        ]
-      },
-      {
-        "id": "2",
-        "title": "iOS Developer",
-        "company": "National Taipei University of Technology",
-        "location": "Taipei, Taiwan",
-        "startDate": "09/2020",
-        "endDate": "04/2023",
-        "timeStamp": "2 yrs 8 mos"
-      },
-      {
-        "id": "3",
-        "title": "iOS Developer",
-        "company": "Freelance",
-        "startDate": "05/2023",
-        "endDate": "Present",
-        "timeStamp": ""
-      }
-    ],
-    "educations": [
-      {
-        "id": "0",
-        "school": "Istanbul Technical University",
-        "major": "Telecommunication Engineering, B.Sc.",
-        "location":"Istanbul, Turkey",
-        "startDate": "09/2008",
-        "endDate": "12/2013"
-      },
-      {
-        "id": "1",
-        "school": "National Taipei University of Technology",
-        "major": "Computer Science, M.Sc.",
-        "location":"Taipei, Taiwan",
-        "startDate": "09/2017",
-        "endDate": "09/2019"
-      }
-    ]
-  }
-  
+  "works": [
+    {
+      "id": "0",
+      "title": "Software Engineer",
+      "company": "Vestel Electronics R&D Corp - Vestel Group",
+      "location": "Istanbul, Turkey",
+      "startDate": "02/2014",
+      "endDate": "08/2017",
+      "timeStamp": "3 yrs 7 mos",
+      "achievements": [
+        {
+          "description": "Design, development, and maintenance of Vestel Smart TV Portal: a multi- language, multi-branded, cross-browser worldwide entertainment web portal for over 6 million users.",
+          "linkTitle": "",
+          "link": ""
+        },
+        {
+          "description": "Designed and developed Smart TV Portal user management panel and electronic information booklet.",
+          "linkTitle": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "title": "Software Engineer",
+      "company": "Power Active Co. Ltd.",
+      "location": "Taipei, Taiwan",
+      "startDate": "09/2019",
+      "endDate": "09/2020",
+      "timeStamp": "1 yr",
+      "achievements": [
+        {
+          "description": "Design and development of iOS application to control IP Cameras and NVR devices. Integrating C++ SDK to iOS Swift application.",
+          "linkTitle": "",
+          "link": ""
+        },
+        {
+          "description": "Design and development of multi-language, multi-role based e-commerce website.",
+          "linkTitle": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "iOS Developer",
+      "company": "National Taipei University of Technology",
+      "location": "Taipei, Taiwan",
+      "startDate": "09/2020",
+      "endDate": "04/2023",
+      "timeStamp": "2 yrs 8 mos",
+      "achievements": [
+        {
+          "description": "End to end design and development of augmented reality iOS application. Designed for interior design purposes as decision guidance in real-time.",
+          "linkTitle": "Chamber Interior Design",
+          "link": "https://chamberapp.canerates.com"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "iOS Developer",
+      "company": "Freelance",
+      "startDate": "05/2023",
+      "endDate": "Present",
+      "timeStamp": "",
+      "achievements": [
+        {
+          "description": "Design and development of native iOS applications that are published to App Store.",
+          "linkTitle": "",
+          "link": ""
+        },
+        {
+          "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
+          "linkTitle": "MobleAR: Real-time Design 3D",
+          "link": "https://apps.apple.com/app/moblear-real-time-design-3d/id6479243434"
+        },
+        {
+          "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
+          "linkTitle": "PasswOCD: Password Generator",
+          "link": "https://apps.apple.com/app/passwocd-password-generator/id6529549759"
+        }
+      ]
+      
+    }
+  ],
+  "educations": [
+    {
+      "id": "0",
+      "school": "Istanbul Technical University",
+      "major": "Telecommunication Engineering, B.Sc.",
+      "location": "Istanbul, Turkey",
+      "startDate": "09/2008",
+      "endDate": "12/2013"
+    },
+    {
+      "id": "1",
+      "school": "National Taipei University of Technology",
+      "major": "Computer Science, M.Sc.",
+      "location": "Taipei, Taiwan",
+      "startDate": "09/2017",
+      "endDate": "09/2019"
+    }
+  ]
+}
