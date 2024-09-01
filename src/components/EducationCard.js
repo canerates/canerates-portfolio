@@ -1,12 +1,10 @@
 import {
-    TimelineConnector,
     TimelineContent,
-    TimelineDot,
     TimelineItem,
     TimelineSeparator,
 } from "@mui/lab";
 import { Typography, styled } from "@mui/material";
-import { StyledTimelineDot, StyledTimelineConnector } from "./Generic";
+import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } from "./Generic";
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
     fontSize: "1.2rem !important",

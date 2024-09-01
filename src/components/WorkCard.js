@@ -7,12 +7,13 @@ import {
 import { Typography, styled, Link } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import { StyledTimelineDot, StyledTimelineConnector } from "./Generic";
+import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } from "./Generic";
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem !important",
   fontWeight: "600",
   color: theme.palette.textMain.main,
+  marginTop: "0.25rem",
   marginBottom: "0.25rem",
   position: 'relative',
   display: 'inline-block',
@@ -57,7 +58,6 @@ const StyledTimeStamp = styled("span")({
 });
 
 const StyledAchievementsContainer = styled("ul")(({ theme, expanded }) => ({
-  color: theme.palette.textMain.main,
   maxHeight: expanded ? '20rem' : '0',
   opacity: expanded ? 1 : 0,
   overflow: 'hidden',

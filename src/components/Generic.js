@@ -1,5 +1,5 @@
 import { styled, Container } from "@mui/material"
-import { TimelineDot, TimelineConnector } from "@mui/lab";
+import { TimelineContent, TimelineDot, TimelineConnector } from "@mui/lab";
 
 export const StyledGenericRoot = styled("section")(({ theme }) => ({
     minHeight: "100vh",
@@ -8,6 +8,17 @@ export const StyledGenericRoot = styled("section")(({ theme }) => ({
     flexWrap: "wrap",
     alignContent: "center",
 }));
+
+export const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
+    position: "relative",
+    background: `${theme.palette.textSecondary.main}20`,
+    borderRadius: "1rem",
+    maxWidth: "19.5rem",
+    marginTop: "0.35rem",
+    marginBottom: "0.35rem",
+    marginLeft: "0.25rem",
+    padding: "1rem",
+  }));
 
 export const StyledGenericContainer = styled(Container)({
     display: "flex !important",
