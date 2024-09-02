@@ -104,49 +104,50 @@ const StyledProjectsYoutubeLink = styled("a")({
 
 export const ProjectCard = ({ project }) => {
   return (
-      <>
-        <StyledProjectsImg
-          alt={`Image of ${project.title}`}
-          src={project.image}
-          referrerPolicy="no-referrer"
-        />
-        <StyledProjectsTextField>
-          <StyledProjectsTitle>{project.title}</StyledProjectsTitle>
-          <StyledProjectsSubText>
-            {project.description}
-          </StyledProjectsSubText>
-          <StyledProjectsSkillContainer>
-            {project.skills.map((skill, index) => (
-              <StyledProjectsSkillText key={index}>
-                {skill}
-              </StyledProjectsSkillText>
-            ))}
-          </StyledProjectsSkillContainer>
-          {project.websiteLink && (
-            <StyledProjectsOpenLink
-              href={project.websiteLink}
-              target="_blank"
-            >
-              <LaunchIcon />
-            </StyledProjectsOpenLink>
-          )}
-          {project.appstoreLink && (
-            <StyledProjectsAppStoreLink
-              href={project.appstoreLink}
-              target="_blank"
-            >
-              <AppStoreIcon />
-            </StyledProjectsAppStoreLink>
-          )}
-          {project.youtubeLink && (
-            <StyledProjectsYoutubeLink
-              href={project.youtubeLink}
-              target="_blank"
-            >
-              <YoutubeIcon />
-            </StyledProjectsYoutubeLink>
-          )}
-        </StyledProjectsTextField>
-      </>
+    <>
+      <StyledProjectsImg
+        alt={`Image of ${project.title}`}
+        src={project.image}
+        referrerPolicy="no-referrer"
+      />
+      <StyledProjectsTextField>
+        <StyledProjectsTitle>{project.title}</StyledProjectsTitle>
+        <StyledProjectsSubText>
+          {project.description}
+        </StyledProjectsSubText>
+        <StyledProjectsSkillContainer>
+          {project.skills.map((skill, index) => (
+            <StyledProjectsSkillText key={index}>
+              {skill}
+            </StyledProjectsSkillText>
+          ))}
+        </StyledProjectsSkillContainer>
+        {project.websiteLink && (
+          <StyledProjectsOpenLink
+            href={project.websiteLink}
+            target="_blank"
+          >
+            <LaunchIcon />
+          </StyledProjectsOpenLink>
+        )}
+        {project.appstoreLink && (
+          <StyledProjectsAppStoreLink
+            href={project.appstoreLink}
+            target="_blank"
+          >
+            <AppStoreIcon />
+          </StyledProjectsAppStoreLink>
+        )}
+
+        {project.youtubeLink && (
+          <StyledProjectsYoutubeLink
+            href={project.youtubeLink}
+            target="_blank"
+          >
+            <YoutubeIcon />
+          </StyledProjectsYoutubeLink>
+        )}
+      </StyledProjectsTextField>
+    </>
   )
 }
