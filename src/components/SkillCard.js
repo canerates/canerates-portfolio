@@ -1,89 +1,35 @@
-import { Typography, styled, Box } from "@mui/material"
+import { styled, Typography } from "@mui/material"
+import { Hexagon } from "react-honeycomb"
 
-const StyledSkillCardContainer = styled("div")(({ theme }) => ({
-    position: "relative",
-    width: "4rem",
-    height: "4rem",
-    backgroundColor: "#4A90FA",
-    margin: "0.3em 0",
+const StyledHexagon = styled(Hexagon)(({ theme }) => ({
+    backgroundColor: `${theme.palette.backgroundSecondary.main}70`,
     display: "flex",
-    alignItems: "center",
     justifyContent: "center",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "16px",
-    textAlign: "center",
-    borderRadius: "2rem",
-    "&:nth-child(5n + 1)": {
-        marginTop: "2.6rem",
+    alignItems: "center",
+    padding: "1rem",
+    transition: "transform 0.3s ease-in-out",
+    "&:hover": {
+        transform: "scale(1.1)",
+        backgroundColor: `${theme.palette.backgroundSecondary.main}90`,
     },
+}));
 
+const StyledHexagonText = styled(Typography)(({ theme }) => ({
+    color: theme.palette.textMain.main,
+    fontSize: "1rem !important",
+    fontWeight: "400",
+    transition: "transform 0.3s ease-in-out",
+    "&:hover": {
+        transform: "scale(1.1)",
+    },
 }));
 
 
-const SkillCard = () => {
+const SkillCard = ( { skill }) => {
     return (
-        <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
-            <StyledSkillCardContainer > 
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-            <StyledSkillCardContainer>
-                <Typography>Test</Typography>
-            </StyledSkillCardContainer>
-
-        </Box>
-
+        <StyledHexagon>
+            <StyledHexagonText>{skill}</StyledHexagonText>
+        </StyledHexagon>
     )
 }
 

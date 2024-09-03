@@ -24,6 +24,7 @@ const Main = () => {
           <About />
           <Experience />
           <Projects />
+
         </StyledMainContainer>
       </StyledMainPage>
     </>
