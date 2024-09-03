@@ -57,7 +57,7 @@ const Experience = () => {
   });
 
   return (
-    <Scroll.Element name="Experience">
+    <Scroll.Element name="experience">
       <StyledGenericRoot ref={experienceContainer}>
         <StyledGenericContainer
           sx={

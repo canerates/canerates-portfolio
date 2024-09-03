@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import { Container, Grid, styled, useTheme } from "@mui/material"
 import * as Scroll from "react-scroll"
 import { useInView, InView } from "react-intersection-observer"
@@ -72,7 +72,7 @@ const About = () => {
   }, [theme]);
 
   return (
-    <Scroll.Element name="About">
+    <Scroll.Element name="about">
       <StyledGenericRoot ref={aboutContainer}>
         <StyledGenericContainer
           sx={

@@ -96,7 +96,7 @@ const Projects = () => {
   });
 
   return (
-    <Scroll.Element name="Projects">
+    <Scroll.Element name="projects">
       <StyledGenericRoot ref={projectsContainer}>
         <StyledGenericContainer
           sx={
