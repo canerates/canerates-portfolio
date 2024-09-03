@@ -1,23 +1,107 @@
 [
-    "Swift",
-    "SwiftUI",
-    "UIKit",
-    "Autolayout",
-    "Mobile App Design",
-    "MVVM",
-    "Combine",
-    "Core Data",
-    "CloudKit",
-    "RealityKit",
-    "ARKit",
-    "Reactive Programming",
-    "Git",
-    "Firebase",
-    "Cloud Firestore",
-    "REST",
-    "React JS",
-    "Material UI",
-    "JSON",
-    "TestFlight",
-    "App Store"
+    {
+        "id": 1,
+        "title": "Core Data",
+        "isInked": false
+    },
+    {
+        "id": 2,
+        "title": "SwiftUI",
+        "isInked": true
+    },
+    {
+        "id": 3,
+        "title": "Swift",
+        "isInked": true
+    },
+    {
+        "id": 4,
+        "title": "RealityKit",
+        "isInked": false
+    },
+    {
+        "id": 5,
+        "title": "ARKit",
+        "isInked": false
+    },
+    {
+        "id": 6,
+        "title": "Mobile App Design",
+        "isInked": true
+    },
+    {
+        "id": 7,
+        "title": "App Store",
+        "isInked": false
+    },
+    {
+        "id": 8,
+        "title": "CloudKit",
+        "isInked": false
+    },
+    {
+        "id": 9,
+        "title": "UIKit",
+        "isInked": true
+    },
+    {
+        "id": 10,
+        "title": "Firebase",
+        "isInked": false
+    },
+    {
+        "id": 11,
+        "title": "Git",
+        "isInked": false
+    },
+    {
+        "id": 12,
+        "title": "ReactJS",
+        "isInked": false
+    },
+    {
+        "id": 13,
+        "title": "MVVM",
+        "isInked": true
+    },
+    {
+        "id": 14,
+        "title": "Reactive Programming",
+        "isInked": true
+    },
+    {
+        "id": 15,
+        "title": "Cloud Firestore",
+        "isInked": false
+    },
+    {
+        "id": 16,
+        "title": "Autolayout",
+        "isInked": true
+    },
+    {
+        "id": 17,
+        "title": "REST",
+        "isInked": true
+    },
+    {
+        "id": 18,
+        "title": "Material UI",
+        "isInked": false
+    },
+    {
+        "id": 19,
+        "title": "JSON",
+        "isInked": true
+    },
+    {
+        "id": 20,
+        "title": "TestFlight",
+        "isInked": false
+    },
+    {
+        "id": 21,
+        "title": "Combine",
+        "isInked": true
+    }
 ]

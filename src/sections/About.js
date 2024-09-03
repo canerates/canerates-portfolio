@@ -36,17 +36,17 @@ const StyledAboutGridItem = styled(Grid)(({ theme }) => ({
 }));
 
 const calculateSideLength = (width, theme) => {
-  if (width >= theme.breakpoints.values.lg) return 72; // Large screens
-  if (width >= theme.breakpoints.values.md) return 64; // Medium screens
-  if (width >= theme.breakpoints.values.sm) return 58; // Small screens
-  return 58; // Extra small screens
+  if (width >= theme.breakpoints.values.lg) return 72;
+  if (width >= theme.breakpoints.values.md) return 67; 
+  if (width >= theme.breakpoints.values.sm) return 62; 
+  return 60;
 };
 
 const calculateDefaultWidth = (width, theme) => {
-  if (width >= theme.breakpoints.values.lg) return 1200; // Large screens
-  if (width >= theme.breakpoints.values.md) return 960; // Medium screens
-  if (width >= theme.breakpoints.values.sm) return 720; // Small screens
-  return 480; // Extra small screens
+  if (width >= theme.breakpoints.values.lg) return 1200;
+  if (width >= theme.breakpoints.values.md) return 1048;
+  if (width >= theme.breakpoints.values.sm) return 960;
+  return 450;
 };
 
 const About = () => {
@@ -84,7 +84,7 @@ const About = () => {
             aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="About Me" subText="Hey! I am Caner Ates. " />
+          <PageHeader title="About" subText= "Hey! I am Caner Ates." />
         </StyledGenericContainer>
         <StyledAboutContainer >
           <StyledAboutGrid container rowSpacing={6} columnSpacing={12}>
@@ -106,11 +106,11 @@ const About = () => {
                   }
                 >
                   <ResponsiveHoneycomb
-                    defaultWidth={1024}
+                    defaultWidth={defaultWidth}
                     size={sideLength}
                     items={skillsData}
                     renderItem={(item) => (
-                      <SkillCard skill={item} />
+                      <SkillCard key={item.id} skill={item} />
                     )}
                   />
                 </StyledAboutGridItem>

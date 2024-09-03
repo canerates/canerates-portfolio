@@ -18,7 +18,7 @@ const Main = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <StyledMainPage>
         <StyledMainContainer>
           <About />
