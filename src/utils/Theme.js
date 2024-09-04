@@ -77,6 +77,10 @@ export const lightTheme = createTheme({
       backgroundSecondary: "",
       shadowPrimary: "#2c3e50",
       shadowSecondary: "#2980b9"
+    },
+    experience: {
+      primary: "skyblue",
+      secondary: "papayawhip"
     }
   }
 });
@@ -158,6 +162,10 @@ export const darkTheme = createTheme({
       backgroundSecondary: "",
       shadowPrimary: "#3A506B",
       shadowSecondary: "#53739A"
+    },
+    experience: {
+      primary: "midnightblue",
+      secondary: "slategray"
     }
   },
 });

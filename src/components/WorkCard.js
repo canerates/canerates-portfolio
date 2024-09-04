@@ -41,7 +41,7 @@ const StyledCardDateText = styled(Typography)(({ theme }) => ({
   fontSize: "1.1rem !important",
   fontWeight: "400",
   fontStyle: "italic",
-  color: theme.palette.text.primary,
+  color: theme.palette.text.secondary,
 
 }));
 

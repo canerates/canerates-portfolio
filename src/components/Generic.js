@@ -21,7 +21,6 @@ export const StyledGenericContainer = styled(Container)({
 
 export const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
     position: "relative",
-    background: `${theme.palette.text.secondary}20`,
     borderRadius: "1rem",
     maxWidth: "19.5rem",
     marginTop: "0.35rem",
@@ -31,10 +30,10 @@ export const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
 }));
 
 export const StyledTimelineDot = styled(TimelineDot)(({ theme }) => ({
-    backgroundColor: theme.palette.text.secondary,
-    color: "white",
+    backgroundColor: theme.palette.experience.primary,
+    color: theme.palette.experience.secondary,
 }));
 
 export const StyledTimelineConnector = styled(TimelineConnector)(({ theme }) => ({
-    backgroundColor: theme.palette.text.secondary
+    backgroundColor: theme.palette.experience.primary
 }));
