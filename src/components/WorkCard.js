@@ -12,7 +12,7 @@ import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } fro
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem !important",
   fontWeight: "600",
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
   marginTop: "0.25rem",
   marginBottom: "0.25rem",
   position: 'relative',
@@ -25,7 +25,7 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
     bottom: 0,
     width: '100%',
     height: '0.15rem',
-    backgroundColor: theme.palette.textMain.main,
+    backgroundColor: theme.palette.text.primary,
     transform: 'scaleY(1.2)',
     transformOrigin: 'left bottom',
   },
@@ -34,14 +34,14 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
 const StyledCardCompanyText = styled(Typography)(({ theme }) => ({
   fontSize: "1.1rem !important",
   fontWeight: "500",
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
 }));
 
 const StyledCardDateText = styled(Typography)(({ theme }) => ({
   fontSize: "1.1rem !important",
   fontWeight: "400",
   fontStyle: "italic",
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
 
 }));
 
@@ -49,7 +49,7 @@ const StyledLocationText = styled(Typography)(({ theme }) => ({
   fontSize: "1rem !important",
   fontWeight: "400",
   fontStyle: "italic",
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
 
 }));
 
@@ -62,7 +62,7 @@ const StyledAchievementsContainer = styled("ul")(({ theme, expanded }) => ({
   opacity: expanded ? 1 : 0,
   overflow: 'hidden',
   transition: 'max-height 0.5s ease-out, opacity 0.5s ease-out',
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
   listStyleType: 'disc',
   paddingLeft: '1.5rem',
   '& li': {

@@ -11,7 +11,7 @@ import SchoolIcon from '@mui/icons-material/School';
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
     fontSize: "1.5rem !important",
     fontWeight: "600",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
 }));
 
 const ExperienceCardHeader = ({ title }) => {

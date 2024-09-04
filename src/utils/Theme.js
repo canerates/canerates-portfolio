@@ -48,34 +48,37 @@ export const lightTheme = createTheme({
   },
   palette: {
     background: {
-      main: "#FFFFFF",
+      primary: "#FFFFFF",
+      secondary: "#bdc3c7",
     },
-    backgroundSecondary: {
-      main: "#bdc3c7",
+    button: {
+      backgroundPrimary: "#bdc3c7",
+      backgroundSecondary: "#3E9F9D",
+      foregroundPrimary: "",
+      foregroundSecondary: "",
+      shadowPrimary: "",
+      shadowSecondary: ""
     },
-    buttonHover: {
-      main: "#3E9F9D",
+    text: {
+      primary: "#0B132B",
+      secondary: "#53739A"
     },
-    textMain: {
-      main: "#0B132B",
+    switch: {
+      baseBackground: `linear-gradient(to bottom, aqua, skyblue)`,
+      notchBackground: "gold",
+      notchIcon: "papayawhip"
     },
-    textSecondary: {
-      main: "#53739A",
+    skill: {
+      backgroundPrimary: `linear-gradient(to bottom, skyblue, aqua)`,
+      bakcgroundSecondary: `linear-gradient(to bottom, papayawhip, gold)`,
     },
-    cardShadow: {
-      main: "#2c3e50",
-      hover: "#2980b9",
-    },
-    switchTheme: {
-      backgroundImage: `linear-gradient(to bottom, aqua, skyblue)`,
-      notchBackgroundColor: "gold",
-      notchIconColor: "papayawhip"
-    },
-    skillCard: {
-      backgroundImage: `linear-gradient(to bottom, skyblue, aqua)`,
-      backgroundImageInked: `linear-gradient(to bottom, papayawhip, gold)`,
+    project: {
+      backgroundPrimary: "#bdc3c7",
+      backgroundSecondary: "",
+      shadowPrimary: "#2c3e50",
+      shadowSecondary: "#2980b9"
     }
-  },
+  }
 });
 
 export const darkTheme = createTheme({
@@ -126,32 +129,35 @@ export const darkTheme = createTheme({
   },
   palette: {
     background: {
-      main: "#0B132B",
+      primary: "#0B132B",
+      secondary: "#3A506B",
     },
-    backgroundSecondary: {
-      main: "#3A506B",
+    button: {
+      backgroundPrimary: "#3A506B",
+      backgroundSecondary: "#53739A",
+      foregroundPrimary: "",
+      foregroundSecondary: "",
+      shadowPrimary: "",
+      shadowSecondary: ""
     },
-    buttonHover: {
-      main: "#53739A",
+    text: {
+      primary: "#FEFFFF",
+      secondary: "#6FFFE9"
     },
-    textMain: {
-      main: "#FEFFFF",
+    switch: {
+      baseBackground: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
+      notchBackground: "darkblue",
+      notchIcon: "slategray"
     },
-    textSecondary: {
-      main: "#6FFFE9",
+    skill: {
+      backgroundPrimary: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
+      bakcgroundSecondary: `linear-gradient(to bottom, slategray, darkblue)`,
     },
-    cardShadow: {
-      main: "#3A506B",
-      hover: "#53739A",
-    },
-    switchTheme: {
-      backgroundImage: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
-      notchBackgroundColor: "darkblue",
-      notchIconColor: "slategray"
-    },
-    skillCard: {
-      backgroundImage: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
-      backgroundImageInked: `linear-gradient(to bottom, slategray, darkblue)`,
+    project: {
+      backgroundPrimary: "#3A506B",
+      backgroundSecondary: "",
+      shadowPrimary: "#3A506B",
+      shadowSecondary: "#53739A"
     }
   },
 });

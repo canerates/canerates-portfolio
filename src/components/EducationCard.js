@@ -9,26 +9,26 @@ import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } fro
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
     fontSize: "1.2rem !important",
     fontWeight: "600",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
 }));
 
 const StyledCardSchoolText = styled(Typography)(({ theme }) => ({
     fontSize: "1.1rem !important",
     fontWeight: "400",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
 }));
 
 const StyledCardDateText = styled(Typography)(({ theme }) => ({
     fontSize: "1.1rem !important",
     fontWeight: "400",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
 }));
 
 const StyledLocationText = styled(Typography)(({ theme }) => ({
     fontSize: "1rem !important",
     fontWeight: "400",
     fontStyle: "italic",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
 
 }));
 

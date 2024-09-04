@@ -2,8 +2,7 @@ import { styled, Typography } from "@mui/material"
 import { Hexagon } from "react-honeycomb"
 
 const StyledHexagon = styled(Hexagon)(({ theme, isInked }) => ({
-    // backgroundColor: `${isInked ? theme.palette.buttonHover.main : theme.palette.backgroundSecondary.main }70`,
-    backgroundImage: `${isInked ? theme.palette.skillCard.backgroundImageInked : theme.palette.skillCard.backgroundImage }`,
+    backgroundImage: `${isInked ? theme.palette.skill.bakcgroundSecondary : theme.palette.skill.backgroundPrimary }`,
     opacity: "0.8",
     display: "flex",
     justifyContent: "center",
@@ -19,9 +18,9 @@ const StyledHexagon = styled(Hexagon)(({ theme, isInked }) => ({
 }));
 
 const StyledHexagonText = styled(Typography)(({ theme }) => ({
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
     fontSize: "1rem !important",
-    fontWeight: "400"
+    fontWeight: "600"
 }));
 
 

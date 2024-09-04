@@ -37,8 +37,8 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
   height: "290px",
   marginBottom: "2.5rem",
   borderRadius: "0.75rem",
-  boxShadow: `0px 0px 10px ${theme.palette.cardShadow.main}70`,
-  backgroundColor: `${theme.palette.backgroundSecondary.main}70`,
+  boxShadow: `0px 0px 10px ${theme.palette.project.shadowPrimary}70`,
+  backgroundColor: `${theme.palette.project.backgroundPrimary}70`,
   paddingTop: "0 !important",
   paddingLeft: "0 !important",
   overflow: "hidden",
@@ -48,7 +48,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
   "&:hover": {
     transform: "scale(1.02)",
     transition: "transform 150ms ease-in-out 0s",
-    boxShadow: `0px 0px 15px ${theme.palette.cardShadow.hover}70`,
+    boxShadow: `0px 0px 15px ${theme.palette.project.shadowSecondary}70`,
     [theme.breakpoints.up("md")]: {
       "& div": {
         opacity: "1",

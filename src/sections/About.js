@@ -9,8 +9,6 @@ import { ResponsiveHoneycomb } from "react-honeycomb"
 import skillsData from "../content/skills.json"
 import SkillCard from "../components/SkillCard"
 
-
-
 const StyledAboutContainer = styled(Container)(({ theme }) => ({
   marginTop: "1rem",
   display: "flex",
@@ -22,17 +20,14 @@ const StyledAboutContainer = styled(Container)(({ theme }) => ({
 }));
 
 const StyledAboutGrid = styled(Grid)(({ theme }) => ({
-  justifyContent: "space-around",
-  width: "100%",
   marginLeft: "0 !important",
   marginTop: "0 !important",
   padding: "1rem"
 }));
 
 const StyledAboutGridItem = styled(Grid)(({ theme }) => ({
-  marginBottom: "2.5rem",
   paddingTop: "0 !important",
-  paddingLeft: "0 !important"
+  paddingLeft: "0 !important",
 }));
 
 const calculateSideLength = (width, theme) => {
@@ -87,7 +82,7 @@ const About = () => {
           <PageHeader title="About" subText= "Hey! I am Caner Ates." />
         </StyledGenericContainer>
         <StyledAboutContainer >
-          <StyledAboutGrid container rowSpacing={6} columnSpacing={12}>
+          <StyledAboutGrid container>
             <InView threshold={0.9} triggerOnce={true}>
               {({ ref, inView }) => (
                 <StyledAboutGridItem

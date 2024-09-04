@@ -22,7 +22,7 @@ import {
 
 
 const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
-  backgroundColor: theme.palette.background.main + " !important",
+  backgroundColor: theme.palette.background.primary + " !important",
   transition:
     "all 0.4s cubic-bezier(0.645,0.045,0.355,1), background-color 0ms !important",
   transitionDelay: "0.1s",
@@ -71,7 +71,7 @@ const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
     },
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.switchTheme.notchBackgroundColor,
+    backgroundColor: theme.palette.switch.notchBackground,
     width: 30,
     height: 30,
     '&::before': {
@@ -90,7 +90,7 @@ const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
   },
   '& .MuiSwitch-track': {
     opacity: 1,
-    backgroundImage: theme.palette.switchTheme.backgroundImage,
+    backgroundImage: theme.palette.switch.baseBackground,
     borderRadius: 17,
   },
 }));
@@ -98,7 +98,7 @@ const StyledThemeSwitch = styled(Switch)(({ theme }) => ({
 const StyledAppBarLink = styled(Link)(({ theme }) => ({
   textDecoration: "none",
   "& p": {
-    color: theme.palette.textMain.main + " !important",
+    color: theme.palette.text.primary + " !important",
     transform: "none",
     transition: "transform 150ms ease-in-out 0s !important",
     cursor: "pointer",
@@ -106,7 +106,7 @@ const StyledAppBarLink = styled(Link)(({ theme }) => ({
     padding: "0.5rem",
     textTransform: 'none',
     "&:hover": {
-      color: theme.palette.textSecondary.main + " !important",
+      color: theme.palette.text.secondary + " !important",
       transform: "translateY(-2px)",
     },
   }
@@ -120,17 +120,17 @@ const StyledResumeLink = styled("a")(({ theme }) => ({
     borderRadius: "8px !important",
     padding: "0.25rem 0.5rem",
     fontSize: "1.2rem",
-    backgroundColor: theme.palette.backgroundSecondary.main + " !important",
+    backgroundColor: theme.palette.button.backgroundPrimary + " !important",
     color: "#FFFFFF",
     transition: "background-color 200ms ease-in-out 0s !important",
     "&:hover": {
-      backgroundColor: theme.palette.buttonHover.main + " !important",
+      backgroundColor: theme.palette.button.backgroundSecondary + " !important",
     },
   },
 }));
 
 const StyledDrawerIcon = styled(MenuIcon)(({ theme }) => ({
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
   fontSize: "2rem !important",
   zIndex: "3 !important",
 }));
@@ -140,7 +140,7 @@ const StyledDrawerCloseIcon = styled(CloseIcon)(({ theme }) => ({
   position: "fixed",
   top: "32px",
   right: "32px",
-  color: theme.palette.textMain.main,
+  color: theme.palette.text.primary,
   fontSize: "2rem !important",
   zIndex: "3 !important",
 }));
@@ -152,7 +152,7 @@ const StyledDrawer = styled(Drawer)(({ theme }) => ({
     boxShadow: "none !important",
     textAlign: "center",
     justifyContent: "center",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.primary,
     zIndex: "2 !important",
   },
 }));
@@ -164,12 +164,12 @@ const StyledAppBarDrawerLink = styled(Link)(({ theme }) => ({
   "& p": {
     animation: "fadeIn",
     animationDuration: "2s",
-    color: theme.palette.textMain.main + " !important",
+    color: theme.palette.text.primary + " !important",
     cursor: "pointer",
     fontSize: "1.75rem",
     padding: "0",
     "&:hover": {
-      color: theme.palette.textSecondary.main + " !important",
+      color: theme.palette.text.secondary + " !important",
     },
   },
 }));
@@ -355,7 +355,7 @@ const Navbar = () => {
       <StyledAppBar position='fixed' isScrolled={isScrolled}>
         <StyledAppBarContainer>
           <Toolbar>
-            <Typography variant='h6' style={{ color: MuiTheme.palette.textMain.main, flexGrow: 1 }} >
+            <Typography variant='h6' style={{ color: MuiTheme.palette.text.primary, flexGrow: 1 }} >
               Caner Ates
             </Typography>
             {collapse ? drawer : navbar}
