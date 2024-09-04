@@ -68,8 +68,13 @@ export const lightTheme = createTheme({
     },
     switchTheme: {
       backgroundImage: `linear-gradient(to bottom, aqua, skyblue)`,
-      notchBackgroundColor: "#FFCC33"
+      notchBackgroundColor: "gold",
+      notchIconColor: "papayawhip"
     },
+    skillCard: {
+      backgroundImage: `linear-gradient(to bottom, skyblue, aqua)`,
+      backgroundImageInked: `linear-gradient(to bottom, papayawhip, gold)`,
+    }
   },
 });
 
@@ -141,7 +146,12 @@ export const darkTheme = createTheme({
     },
     switchTheme: {
       backgroundImage: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
-      notchBackgroundColor: "#040348"
+      notchBackgroundColor: "darkblue",
+      notchIconColor: "slategray"
     },
+    skillCard: {
+      backgroundImage: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
+      backgroundImageInked: `linear-gradient(to bottom, slategray, darkblue)`,
+    }
   },
 });
