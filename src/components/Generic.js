@@ -32,8 +32,17 @@ export const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
 export const StyledTimelineDot = styled(TimelineDot)(({ theme }) => ({
     backgroundColor: theme.palette.experience.primary,
     color: theme.palette.experience.secondary,
+    transition: "transform 150ms ease-in-out 0s !important",
+    "&:hover": {
+      transform: "scale(1.2)",
+    },
+}));
+
+export const StyledTimelineDotStatic = styled(TimelineDot)(({ theme }) => ({
+    backgroundColor: theme.palette.experience.primary,
+    color: theme.palette.experience.secondary,
 }));
 
 export const StyledTimelineConnector = styled(TimelineConnector)(({ theme }) => ({
-    backgroundColor: theme.palette.experience.primary
+    backgroundColor: theme.palette.experience.primary,
 }));

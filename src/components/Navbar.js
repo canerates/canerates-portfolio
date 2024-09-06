@@ -121,10 +121,10 @@ const StyledResumeLink = styled("a")(({ theme }) => ({
     padding: "0.25rem 0.5rem",
     fontSize: "1.2rem",
     backgroundColor: theme.palette.button.backgroundPrimary + " !important",
-    color: "#FFFFFF",
-    transition: "background-color 200ms ease-in-out 0s !important",
+    color: theme.palette.button.foregroundPrimary,
+    transition: "transform 150ms ease-in-out 0s !important",
     "&:hover": {
-      backgroundColor: theme.palette.button.backgroundSecondary + " !important",
+      transform: "scale(1.08)",
     },
   },
 }));

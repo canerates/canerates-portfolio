@@ -20,7 +20,10 @@ const StyledHexagon = styled(Hexagon)(({ theme, isInked }) => ({
 const StyledHexagonText = styled(Typography)(({ theme }) => ({
     color: theme.palette.text.primary,
     fontSize: "1rem !important",
-    fontWeight: "600"
+    fontWeight: "600",
+    [theme.breakpoints.down("sm")]: {
+        fontSize: "0.9rem !important"
+      },
 }));
 
 

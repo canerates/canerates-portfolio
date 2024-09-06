@@ -18,16 +18,21 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
   position: 'relative',
   display: 'inline-block',
   paddingBottom: '0.1rem',
-  '&::after': {
+  transition: "transform 150ms ease-in-out 0s !important",
+  "&:hover": {
+      transform: "translateX(4px)",
+      color: theme.palette.text.secondary,
+    },
+  "&::after": {
     content: '""',
     position: 'absolute',
     left: 0,
     bottom: 0,
     width: '100%',
     height: '0.15rem',
-    backgroundColor: theme.palette.text.primary,
+    backgroundColor: theme.palette.text.secondary,
     transform: 'scaleY(1.2)',
-    transformOrigin: 'left bottom',
+    transformOrigin: 'left bottom'
   },
 }));
 

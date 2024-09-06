@@ -11,7 +11,7 @@ export const lightTheme = createTheme({
           backgroundColor: "#FFFFFF",
         },
         "*::-webkit-scrollbar-thumb": {
-          backgroundColor: "#5BC0BE",
+          backgroundColor: "#3A506B", //#5BC0BE
         },
         "*": {
           boxSizing: "unset",
@@ -52,10 +52,10 @@ export const lightTheme = createTheme({
       secondary: "#bdc3c7",
     },
     button: {
-      backgroundPrimary: "#bdc3c7",
-      backgroundSecondary: "#3E9F9D",
-      foregroundPrimary: "",
-      foregroundSecondary: "",
+      backgroundPrimary: "#53739A", // blue
+      backgroundSecondary: "#018786", //green
+      foregroundPrimary: "#fff",
+      foregroundSecondary: "#fff",
       shadowPrimary: "",
       shadowSecondary: ""
     },
@@ -69,18 +69,20 @@ export const lightTheme = createTheme({
       notchIcon: "papayawhip"
     },
     skill: {
-      backgroundPrimary: `linear-gradient(to bottom, skyblue, aqua)`,
-      bakcgroundSecondary: `linear-gradient(to bottom, papayawhip, gold)`,
+      backgroundPrimary: `linear-gradient(to bottom, #53739A, #fff)`,
+      bakcgroundSecondary: `linear-gradient(to bottom, #018786, #fff)`,
     },
     project: {
       backgroundPrimary: "#bdc3c7",
-      backgroundSecondary: "",
+      backgroundSecondary: "#bdc3c7",
       shadowPrimary: "#2c3e50",
-      shadowSecondary: "#2980b9"
+      shadowSecondary: "#018786",
+      button: "#03DAC6", //green
     },
     experience: {
-      primary: "skyblue",
-      secondary: "papayawhip"
+      primary: "#53739A", // blue 
+      secondary: "#FFFFFF",
+      
     }
   }
 });
@@ -93,10 +95,10 @@ export const darkTheme = createTheme({
         "*::-webkit-scrollbar": {
           width: "0.4em",
           height: "0.4em",
-          backgroundColor: "#0B132B",
+          backgroundColor: "#212121",
         },
         "*::-webkit-scrollbar-thumb": {
-          backgroundColor: "#3A506B",
+          backgroundColor: "#5BC0BE",
         },
         "*": {
           boxSizing: "unset",
@@ -133,19 +135,19 @@ export const darkTheme = createTheme({
   },
   palette: {
     background: {
-      primary: "#0B132B",
+      primary: "#212121",
       secondary: "#3A506B",
     },
     button: {
-      backgroundPrimary: "#3A506B",
-      backgroundSecondary: "#53739A",
-      foregroundPrimary: "",
-      foregroundSecondary: "",
+      backgroundPrimary: "#03DAC6", //green
+      backgroundSecondary: "#3700B3", //blue
+      foregroundPrimary: "#000",
+      foregroundSecondary: "#fff",
       shadowPrimary: "",
       shadowSecondary: ""
     },
     text: {
-      primary: "#FEFFFF",
+      primary: "#FFFFFF",
       secondary: "#6FFFE9"
     },
     switch: {
@@ -154,18 +156,19 @@ export const darkTheme = createTheme({
       notchIcon: "slategray"
     },
     skill: {
-      backgroundPrimary: `linear-gradient(to bottom, midnightblue, rebeccapurple)`,
-      bakcgroundSecondary: `linear-gradient(to bottom, slategray, darkblue)`,
+      backgroundPrimary: `linear-gradient(to bottom, slategray, #3700B3)`,
+      bakcgroundSecondary: `linear-gradient(to bottom, #212121, #03DAC6)`,
     },
     project: {
-      backgroundPrimary: "#3A506B",
+      backgroundPrimary: "#505050",
       backgroundSecondary: "",
       shadowPrimary: "#3A506B",
-      shadowSecondary: "#53739A"
+      shadowSecondary: "#03DAC6",
+      button: "#03DAC6", //green
     },
     experience: {
-      primary: "midnightblue",
-      secondary: "slategray"
+      primary: "#03DAC6", //green
+      secondary: "#212121"
     }
   },
 });

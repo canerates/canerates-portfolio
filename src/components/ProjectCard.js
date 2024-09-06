@@ -47,14 +47,14 @@ const StyledProjectsSkillText = styled(Typography)(({ theme }) => ({
   marginRight: "0.5rem",
   padding: "0.1rem 0.4rem",
   borderRadius: "0.5rem",
-  color: "black",
+  color: "#000",
   fontWeight: "600",
   [theme.breakpoints.down("sm")]: {
     fontSize: "0.7rem !important",
   },
 }));
-const StyledProjectsOpenLink = styled("a")({
-  color: "inherit",
+const StyledProjectsOpenLink = styled("a")(({ theme }) => ({
+  color: theme.palette.project.button,
   "& svg": {
     padding: "0",
     minWidth: "0",
@@ -68,9 +68,9 @@ const StyledProjectsOpenLink = styled("a")({
       transform: "scale(1.15)",
     },
   },
-});
-const StyledProjectsAppStoreLink = styled("a")({
-  color: "inherit",
+}));
+const StyledProjectsAppStoreLink = styled("a")(({ theme }) => ({
+  color: theme.palette.project.button,
   "& svg": {
     padding: "0",
     minWidth: "0",
@@ -83,10 +83,10 @@ const StyledProjectsAppStoreLink = styled("a")({
       transform: "scale(1.15)",
     },
   },
-});
+}));
 
-const StyledProjectsYoutubeLink = styled("a")({
-  color: "inherit",
+const StyledProjectsYoutubeLink = styled("a")(({ theme }) => ({
+  color: theme.palette.project.button,
   "& svg": {
     padding: "0",
     minWidth: "0",
@@ -100,7 +100,7 @@ const StyledProjectsYoutubeLink = styled("a")({
       transform: "scale(1.6)",
     },
   },
-});
+}));
 
 export const ProjectCard = ({ project }) => {
   return (
