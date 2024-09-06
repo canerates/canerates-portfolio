@@ -22,7 +22,7 @@ const Main = () => {
       <Navbar />
       <StyledMainPage>
         <StyledMainContainer>
-          {/* <Hero /> */}
+          <Hero />
           <About />
           <Experience />
           <Projects />
