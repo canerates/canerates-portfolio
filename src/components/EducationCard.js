@@ -21,14 +21,14 @@ const StyledCardSchoolText = styled(Typography)(({ theme }) => ({
 const StyledCardDateText = styled(Typography)(({ theme }) => ({
     fontSize: "1.1rem !important",
     fontWeight: "400",
-    color: theme.palette.text.primary,
+    color: theme.palette.text.secondary,
 }));
 
 const StyledLocationText = styled(Typography)(({ theme }) => ({
     fontSize: "1rem !important",
     fontWeight: "400",
     fontStyle: "italic",
-    color: theme.palette.text.primary,
+    color: theme.palette.text.secondary,
 
 }));
 

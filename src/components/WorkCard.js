@@ -8,6 +8,7 @@ import { Typography, styled, Link } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } from "./Generic";
+import { transform } from 'framer-motion';
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem !important",
@@ -54,7 +55,7 @@ const StyledLocationText = styled(Typography)(({ theme }) => ({
   fontSize: "1rem !important",
   fontWeight: "400",
   fontStyle: "italic",
-  color: theme.palette.text.primary,
+  color: theme.palette.text.secondary,
 
 }));
 
@@ -87,7 +88,14 @@ const StyledAchievementItem = styled(Typography)(({ theme }) => ({
 
 const StyledAchievementLink = styled(Link)(({ theme }) => ({
   display: "block",
-  marginTop: "0.25rem"
+  marginTop: "0.25rem",
+  textDecorationColor: theme.palette.text.secondary,
+  color: theme.palette.text.secondary,
+  transition: "transform 150ms ease-in-out 0s !important",
+  "&:hover": {
+      transform: "translateX(4px)",
+      color: theme.palette.text.secondary,
+    },
 }));
 
 
