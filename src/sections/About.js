@@ -19,22 +19,19 @@ const StyledAboutContainer = styled(Container)(({ theme }) => ({
   justifyContent: "center"
 }));
 
-const StyledAboutGrid = styled(Grid)(({ theme }) => ({
+const StyledAboutSkillsContainer = styled(Grid)(({ theme }) => ({
   marginLeft: "0 !important",
   marginTop: "0 !important",
   padding: "1rem"
-}));
-
-const StyledAboutGridItem = styled(Grid)(({ theme }) => ({
-  paddingTop: "0 !important",
-  paddingLeft: "0 !important",
 }));
 
 const calculateSideLength = (width, theme) => {
   if (width >= theme.breakpoints.values.lg) return 72;
   if (width >= theme.breakpoints.values.md) return 67; 
   if (width >= theme.breakpoints.values.sm) return 62; 
-  return 60;
+  if (width >= theme.breakpoints.values.xs) return 58; 
+  if (width >= theme.breakpoints.values.xxs) return 50; 
+  return 42;
 };
 
 const calculateDefaultWidth = (width, theme) => {
@@ -82,12 +79,9 @@ const About = () => {
           <PageHeader title="About" subText= "Hey! I am Caner Ates." />
         </StyledGenericContainer>
         <StyledAboutContainer >
-          <StyledAboutGrid container>
-            <InView threshold={0.9} triggerOnce={true}>
+        <InView threshold={0.2} triggerOnce={true}>
               {({ ref, inView }) => (
-                <StyledAboutGridItem
-                  item
-                  xs={12}
+                <StyledAboutSkillsContainer
                   ref={ref}
                   inView={inView}
                   sx={
@@ -108,11 +102,9 @@ const About = () => {
                       <SkillCard key={item.id} skill={item} />
                     )}
                   />
-                </StyledAboutGridItem>
+                </StyledAboutSkillsContainer>
               )}
             </InView>
-
-          </StyledAboutGrid>
         </StyledAboutContainer>
       </StyledGenericRoot>
     </Scroll.Element>

@@ -83,8 +83,7 @@ const Experience = () => {
                   [`& .${timelineItemClasses.root}:before`]: {
                     flex: 0,
                     padding: 0,
-                  },
-                  paddingLeft: 10
+                  }
                 }}
               >
                 <InView key={1001} threshold={0.9} triggerOnce={true}>
@@ -151,8 +150,7 @@ const Experience = () => {
                   [`& .${timelineItemClasses.root}:before`]: {
                     flex: 0,
                     padding: 0,
-                  },
-                  paddingLeft: 10
+                  }
                 }}
               >
                 <InView key={1002} threshold={0.9} triggerOnce={true}>
