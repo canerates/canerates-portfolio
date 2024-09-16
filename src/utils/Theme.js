@@ -49,7 +49,7 @@ export const lightTheme = createTheme({
   },
   palette: {
     background: {
-      primary: "#FFFFFF",
+      primary: "#ecf0f1",
       secondary: "#bdc3c7",
     },
     button: {
@@ -70,8 +70,8 @@ export const lightTheme = createTheme({
       notchIcon: "papayawhip"
     },
     skill: {
-      backgroundPrimary: `linear-gradient(to bottom, #53739A, #fff)`,
-      bakcgroundSecondary: `linear-gradient(to bottom, #018786, #fff)`,
+      backgroundPrimary: `linear-gradient(to bottom, #53739A, #ecf0f1)`,
+      backgroundSecondary: `linear-gradient(to bottom, #018786, #ecf0f1)`,
     },
     project: {
       backgroundPrimary: "#bdc3c7",
@@ -83,7 +83,9 @@ export const lightTheme = createTheme({
     experience: {
       primary: "#53739A", // blue 
       secondary: "#FFFFFF",
-      
+    },
+    heroImage: {
+      opacity: "0.9"
     }
   }
 });
@@ -159,7 +161,7 @@ export const darkTheme = createTheme({
     },
     skill: {
       backgroundPrimary: `linear-gradient(to bottom, slategray, #3700B3)`,
-      bakcgroundSecondary: `linear-gradient(to bottom, #212121, #03DAC6)`,
+      backgroundSecondary: `linear-gradient(to bottom, #212121, #03DAC6)`,
     },
     project: {
       backgroundPrimary: "#505050",
@@ -171,6 +173,9 @@ export const darkTheme = createTheme({
     experience: {
       primary: "#03DAC6", //green
       secondary: "#212121"
+    },
+    heroImage: {
+      opacity: "0.7"
     }
   },
 });
