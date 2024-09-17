@@ -113,6 +113,12 @@ const StyledAppBarLink = styled(Link)(({ theme }) => ({
 
 }));
 
+const StyledNavbarContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  alignSelf: "center",
+}));
+
 const StyledResumeLink = styled("a")(({ theme }) => ({
   cursor: "pointer",
   textDecoration: "none",
@@ -231,16 +237,6 @@ const Navbar = () => {
 
   const navbar = (
     <>
-      <div
-        className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
-      >
-        <StyledThemeSwitch
-          aria-label="Change theme"
-          checked={checked}
-          onChange={handleChange}
-        />
-      </div>
-
       {navbarData.map((data) => (
         <div key={data.id}
           className={
@@ -257,19 +253,6 @@ const Navbar = () => {
           </StyledAppBarLink>
         </div>
       ))}
-      <div
-        style={{ paddingLeft: "4px" }}
-        className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
-      >
-        <StyledResumeLink
-          href={
-            process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2024-5.pdf"
-          }
-          target="_blank"
-        >
-          <Typography>resume</Typography>
-        </StyledResumeLink>
-      </div>
     </>
   );
 
@@ -309,7 +292,7 @@ const Navbar = () => {
             <StyledResumeLink
               href={
                 process.env.PUBLIC_URL +
-                "/Maximilian Oberholtzer Resume 2023.pdf"
+                "/Caner Ates Resume iOS Dev 2024-5.pdf"
               }
               target="_blank"
             >
@@ -323,7 +306,7 @@ const Navbar = () => {
                   animationDuration: "2s",
                 }}
               >
-                resume
+                Resume
               </Typography>
             </StyledResumeLink>
           </StyledDrawerList>
@@ -354,11 +337,23 @@ const Navbar = () => {
     <Slide appear={false} direction="down" in={!trigger}>
       <StyledAppBar position='fixed' isScrolled={isScrolled}>
         <StyledAppBarContainer>
-          <Toolbar>
-            <Typography variant='h6' style={{ color: MuiTheme.palette.text.primary, flexGrow: 1 }} >
+          <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+            <Typography variant='h6' style={{ color: MuiTheme.palette.text.primary, }} >
               Caner Ates
             </Typography>
-            {collapse ? drawer : navbar}
+            {collapse ? drawer : <StyledNavbarContainer>{navbar}</StyledNavbarContainer>}
+            {!collapse &&
+              <div
+              className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
+            >
+              <StyledThemeSwitch
+                aria-label="Change theme"
+                checked={checked}
+                onChange={handleChange}
+              />
+            </div>
+
+            }
           </Toolbar>
         </StyledAppBarContainer>
       </StyledAppBar>

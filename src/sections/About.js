@@ -10,7 +10,8 @@ import skillsData from "../content/skills.json"
 import SkillCard from "../components/SkillCard"
 
 const StyledAboutContainer = styled(Container)(({ theme }) => ({
-  marginTop: "1rem",
+  marginTop: "2rem",
+  marginBottom: "2rem",
   display: "flex",
   flexDirection: "column",
   boxSizing: "unset !important",
@@ -64,7 +65,7 @@ const About = () => {
   }, [theme]);
 
   return (
-    <Scroll.Element name="about">
+    <Scroll.Element name="About">
       <StyledGenericRoot ref={aboutContainer}>
         <StyledGenericContainer
           sx={
@@ -76,7 +77,7 @@ const About = () => {
             aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="About" subText= "Hey! I am Caner Ates." />
+          <PageHeader title="About" subText= "I have been building iOS native applications for 4+ years. I have published 2 original application to the App Store. Listed below are some of languages and technologies that I have experience using." />
         </StyledGenericContainer>
         <StyledAboutContainer >
         <InView threshold={0.2} triggerOnce={true}>
