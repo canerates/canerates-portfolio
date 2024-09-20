@@ -1,13 +1,15 @@
 import { styled, Container } from "@mui/material"
 import { TimelineContent, TimelineDot, TimelineConnector } from "@mui/lab";
 
-export const StyledGenericRoot = styled("section")(({ theme }) => ({
+export const StyledGenericRoot = styled("section")(({ theme, ismobile }) => ({
     display: "flex",
     flexWrap: "wrap",
     alignContent: "center",
     justifyContent: "center",
-    minHeight: "100vh",
+    // minHeight: "100vh",
+    minHeight: ismobile ? "auto" : "100vh",
     backgroundColor: theme.palette.background.primary,
+    
 }));
 
 export const StyledGenericContainer = styled(Container)({

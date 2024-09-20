@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Container, Grid, Typography, Box, styled, useTheme, useMediaQuery } from "@mui/material";
+import { Container, Grid, Typography, styled } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import heroImg from "../assets/hero/caner-cropped.png"
 import AnchorLinks from "../components/AnchorLinks"
@@ -11,8 +11,8 @@ const StyledHeroRoot = styled("section")(({ theme,  ismobile }) => ({
   justifyContent: "center",
   flexDirection: "column",
   alignItems: "center",
-  // minHeight: ismobile ? "auto" : "100vh",
-  minHeight: "100vh",
+  minHeight: ismobile ? "auto" : "100vh",
+  // minHeight: "100vh",
 }));
 
 const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
@@ -21,10 +21,8 @@ const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   alignItems: "center",
   alignSelf: "center",
   boxSizing: "unset !important",
+  maxWidth: "1000px !important",
   width: "unset",
-  ["@media (max-height: 804px)"]: {
-    paddingTop: ismobile ? "0px" : "102px",
-  },
   [theme.breakpoints.up("sm")]: {
     marginTop: "2rem",
   },
@@ -167,20 +165,17 @@ const StyledAnchorLinks = styled(Grid)(({ theme }) => ({
 
 const Hero = ({ img }) => {
 
-  const theme = useTheme();
   const [isMobile, setIsMobile] = useState(false);
-  const isLinksVisible = !useMediaQuery(theme.breakpoints.down("md"));
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
     const isMobileDevice =
       /mobile|android|ios|iphone|ipad|ipod|windows phone/i.test(userAgent);
-    // setIsMobile(isMobileDevice);
-    setIsMobile(true);
+    setIsMobile(isMobileDevice);
   }, []);
 
   return (
-    <StyledHeroRoot>
+    <StyledHeroRoot ismobile={isMobile}>
       <StyledHeroContainer>
         <StyledHeroGrid container>
           <StyledHeroText

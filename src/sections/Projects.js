@@ -1,3 +1,4 @@
+import { React, useState, useEffect } from "react"
 import { Container, Grid, styled } from "@mui/material"
 import * as Scroll from "react-scroll"
 import { useInView, InView } from "react-intersection-observer"
@@ -95,9 +96,18 @@ const Projects = () => {
     triggerOnce: true,
   });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isMobileDevice =
+      /mobile|android|ios|iphone|ipad|ipod|windows phone/i.test(userAgent);
+    setIsMobile(isMobileDevice);
+  }, []);
+
   return (
     <Scroll.Element name="Projects">
-      <StyledGenericRoot ref={projectsContainer}>
+      <StyledGenericRoot ref={projectsContainer} ismobile={isMobile}>
         <StyledGenericContainer
           sx={
             projectsContainerInView

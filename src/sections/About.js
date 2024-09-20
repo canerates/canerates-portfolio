@@ -1,5 +1,5 @@
 
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect } from "react"
 import { Container, Grid, styled, useTheme } from "@mui/material"
 import * as Scroll from "react-scroll"
 import { useInView, InView } from "react-intersection-observer"
@@ -27,18 +27,17 @@ const StyledAboutSkillsContainer = styled(Grid)(({ theme }) => ({
 }));
 
 const calculateSideLength = (width, theme) => {
-  if (width >= theme.breakpoints.values.lg) return 72;
-  if (width >= theme.breakpoints.values.md) return 67; 
-  if (width >= theme.breakpoints.values.sm) return 62; 
-  if (width >= theme.breakpoints.values.xs) return 58; 
-  if (width >= theme.breakpoints.values.xxs) return 50; 
-  return 42;
+  if (width >= theme.breakpoints.values.lg) return 82; 
+  if (width >= theme.breakpoints.values.md) return 77;  
+  if (width >= theme.breakpoints.values.sm) return 72; 
+  if (width >= theme.breakpoints.values.xs) return 62; 
+  return 51;
 };
 
 const calculateDefaultWidth = (width, theme) => {
   if (width >= theme.breakpoints.values.lg) return 1200;
-  if (width >= theme.breakpoints.values.md) return 1048;
-  if (width >= theme.breakpoints.values.sm) return 960;
+  if (width >= theme.breakpoints.values.md) return 900;
+  if (width >= theme.breakpoints.values.sm) return 600;
   return 450;
 };
 
@@ -53,6 +52,15 @@ const About = () => {
   const [sideLength, setSideLength] = useState(calculateSideLength(window.innerWidth, theme));
   const [defaultWidth, setDefaultWidth] = useState(calculateDefaultWidth(window.innerWidth, theme));
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isMobileDevice =
+      /mobile|android|ios|iphone|ipad|ipod|windows phone/i.test(userAgent);
+    setIsMobile(isMobileDevice);
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       setSideLength(calculateSideLength(window.innerWidth, theme));
@@ -66,7 +74,7 @@ const About = () => {
 
   return (
     <Scroll.Element name="About">
-      <StyledGenericRoot ref={aboutContainer}>
+      <StyledGenericRoot ref={aboutContainer} ismobile={isMobile}>
         <StyledGenericContainer
           sx={
             aboutContainerInView
