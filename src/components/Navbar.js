@@ -186,7 +186,7 @@ const Navbar = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const collapse = useMediaQuery(MuiTheme.breakpoints.down("sm"));
+  const collapse = useMediaQuery(MuiTheme.breakpoints.down("md"));
   const [checked, setChecked] = useState(theme === "dark");
 
   useEffect(() => {

@@ -120,7 +120,7 @@ const Projects = () => {
                   <StyledProjectsGridItem
                     item
                     xs={12}
-                    sm={5.5}
+                    md={5.5}
                     ref={ref}
                     inView={inView}
                     sx={

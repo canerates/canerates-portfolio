@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react"
-import { Container, Grid, Typography, Box, styled, useTheme } from "@mui/material";
+import { Container, Grid, Typography, Box, styled, useTheme, useMediaQuery } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import heroImg from "../assets/hero/caner-cropped.png"
+import AnchorLinks from "../components/AnchorLinks"
 
-const StyledHeroRoot = styled("section")(({ theme }) => ({
+const StyledHeroRoot = styled("section")(({ theme,  ismobile }) => ({
   display: "flex",
   flexWrap: "wrap",
   alignContent: "center",
   justifyContent: "center",
   flexDirection: "column",
   alignItems: "center",
+  // minHeight: ismobile ? "auto" : "100vh",
   minHeight: "100vh",
+}));
 
-}))
-
-const StyledHeroContainer = styled(Container)(({ theme }) => ({
+const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   display: "flex !important",
   flex: "1",
   alignItems: "center",
@@ -22,53 +23,49 @@ const StyledHeroContainer = styled(Container)(({ theme }) => ({
   boxSizing: "unset !important",
   width: "unset",
   ["@media (max-height: 804px)"]: {
-    // paddingTop: ismobile ? "0px" : "102px",
+    paddingTop: ismobile ? "0px" : "102px",
   },
   [theme.breakpoints.up("sm")]: {
     marginTop: "2rem",
   },
+}));
 
-}))
-
-const StyledHeroGrid = styled(Grid)(({ theme }) => ({
-  justifyContent: "space-around",
+const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
   alignItems: "center",
+  justifyContent: "space-around",
   width: "auto",
-  [theme.breakpoints.down("xs")]: {
-    // maxWidth: "70%",
-    // justifyContent: "flex-end"
-    marginBottom: "2rem",
-    marginTop: "2rem",
-  },
+  marginBottom: ismobile ? "3.5rem" : "0rem",
 }));
 
 const StyledHeroGridItem = styled(Grid)(({ theme }) => ({
   display: "flex",
   padding: "0rem",
   alignItems: "center",
+  // height: "auto",
   justifyContent: "center",
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("md")]: {
     order: "1",
-    // marginTop: "2rem",
-    // marginBottom: "2rem"
+    paddingLeft: "1rem",
+    marginTop: "2rem",
   },
 }));
 
 const StyledHeroImage = styled("img")(({ theme }) => ({
   animation: "fadeIn",
   animationDuration: "2s",
-  maxWidth: "70%",
+  maxWidth: "80%",
   height: "auto",
+  
   opacity: theme.palette.heroImage.opacity,
 
   [theme.breakpoints.down("lg")]: {
-    maxWidth: "70%",
+    maxWidth: "85%",
   },
   [theme.breakpoints.down("md")]: {
-    maxWidth: "70%",
+    maxWidth: "45%",
   },
   [theme.breakpoints.down("sm")]: {
-    maxWidth: "95%",
+    maxWidth: "60%",
   },
   [theme.breakpoints.down("xs")]: {
     maxWidth: "70%",
@@ -79,17 +76,18 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
 const StyledHeroText = styled(Grid)(({ theme }) => ({
   animation: "fadeIn",
   animationDuration: "2s",
-  width: "50%",
+  // height: "290px",
+  // width: "50%",
   paddingLeft: "0 !important",
+  // [theme.breakpoints.down("md")]: {
+  //   width: "80%",
+  //   margin: "0",
+  // },
+  // [theme.breakpoints.down("sm")]: {
+  //   width: "90%",
+  //   margin: "0",
+  // },
   [theme.breakpoints.down("md")]: {
-    width: "80%",
-    margin: "0",
-  },
-  [theme.breakpoints.down("sm")]: {
-    width: "90%",
-    margin: "0",
-  },
-  [theme.breakpoints.down("xs")]: {
     width: "100%",
     margin: "0",
     order: "2",
@@ -105,7 +103,7 @@ const StyledHeroGreetingText = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
   fontSize: "clamp(20px, 2vw, 26px) !important",
 
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("md")]: {
     textAlign: "center"
   },
 }));
@@ -118,7 +116,7 @@ const StyledHeroTitle = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     whiteSpace: "nowrap",
   },
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("md")]: {
     textAlign: "center"
   },
 }));
@@ -126,7 +124,7 @@ const StyledHeroTitle = styled(Typography)(({ theme }) => ({
 const StyledHeroSubText = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.secondary + " !important",
   fontSize: "clamp(20px, 2vw, 26px) !important",
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("md")]: {
     textAlign: "center"
   },
 }));
@@ -149,29 +147,43 @@ const StyledResumeLink = styled("a")(({ theme }) => ({
   },
 }));
 
+const StyledAnchorLinks = styled(Grid)(({ theme }) => ({
+  animation: "fadeIn",
+  animationDuration: "2s",
+  paddingLeft: "0 !important",
+  // height: "700px",
+  display: "flex",
+  flexDirection: "column",
+  [theme.breakpoints.down("md")]: {
+    order: "2",
+    textAlign: "center",
+    marginBottom: "2rem",
+  },
+
+}));
+
 const Hero = ({ img }) => {
 
   const theme = useTheme();
-
   const [isMobile, setIsMobile] = useState(false);
+  const isLinksVisible = !useMediaQuery(theme.breakpoints.down("md"));
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
     const isMobileDevice =
       /mobile|android|ios|iphone|ipad|ipod|windows phone/i.test(userAgent);
-    setIsMobile(isMobileDevice);
+    // setIsMobile(isMobileDevice);
+    setIsMobile(true);
   }, []);
 
   return (
     <StyledHeroRoot>
       <StyledHeroContainer>
-        <StyledHeroGrid container spacing={0}>
+        <StyledHeroGrid container>
           <StyledHeroText
             item
-            xxs={12}
-            xs={7}
-            sm={7}
-            md={7}
+            xs={12}
+            md={6}
           >
             <StyledHeroGreetingText>
               Hello, I'm
@@ -209,14 +221,21 @@ const Hero = ({ img }) => {
 
           <StyledHeroGridItem
             item
-            xxs={12}
-            xs={5}
-            sm={5}
+            xs={12}
             md={5}
           >
             <StyledHeroImage alt="Image of Caner Ates" src={heroImg} />
           </StyledHeroGridItem>
+          
+          <StyledAnchorLinks 
+          item
+          xs = {12}
+          md={1}
+          >
+            <AnchorLinks />
 
+          </StyledAnchorLinks>
+          
         </StyledHeroGrid>
       </StyledHeroContainer>
     </StyledHeroRoot>

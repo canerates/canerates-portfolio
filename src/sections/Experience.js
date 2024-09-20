@@ -76,7 +76,7 @@ const Experience = () => {
             <StyledExperienceGridItem
               item
               xs={12}
-              sm={6}
+              md={6}
             >
               <Timeline
                 sx={{
@@ -143,7 +143,7 @@ const Experience = () => {
             <StyledExperienceGridItem
               item
               xs={12}
-              sm={6}
+              md={6}
             >
               <Timeline
                 sx={{
