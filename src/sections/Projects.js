@@ -83,7 +83,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
     },
   },
   [theme.breakpoints.down("sm")]: {
-    height: "260px !important",
+    height: "290px !important",
   },
 }));
 

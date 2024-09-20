@@ -28,6 +28,9 @@ const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   [theme.breakpoints.up("sm")]: {
     marginTop: "2rem",
   },
+  [theme.breakpoints.down("md")]: {
+    marginBottom: "2rem",
+  },
 }));
 
 const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
@@ -65,7 +68,7 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
     maxWidth: "45%",
   },
   [theme.breakpoints.down("sm")]: {
-    maxWidth: "60%",
+    maxWidth: "70%",
   },
   [theme.breakpoints.down("xs")]: {
     maxWidth: "70%",
