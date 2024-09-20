@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { Container, Grid, Typography, styled } from "@mui/material";
-import Typewriter from "typewriter-effect";
+import { Container, Grid, Typography, styled } from "@mui/material"
+import * as Scroll from "react-scroll"
+import Typewriter from "typewriter-effect"
 import heroImg from "../assets/hero/caner-cropped.png"
 import AnchorLinks from "../components/AnchorLinks"
 
-const StyledHeroRoot = styled("section")(({ theme,  ismobile }) => ({
+const StyledHeroRoot = styled("section")(({ theme, ismobile }) => ({
   display: "flex",
   flexWrap: "wrap",
   alignContent: "center",
@@ -56,7 +57,7 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
   animationDuration: "2s",
   maxWidth: "80%",
   height: "auto",
-  
+
   opacity: theme.palette.heroImage.opacity,
 
   [theme.breakpoints.down("lg")]: {
@@ -66,10 +67,10 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
     maxWidth: "45%",
   },
   [theme.breakpoints.down("sm")]: {
-    maxWidth: "70%",
+    maxWidth: "65%",
   },
   [theme.breakpoints.down("xs")]: {
-    maxWidth: "70%",
+    maxWidth: "60%",
   },
 
 }));
@@ -175,68 +176,70 @@ const Hero = ({ img }) => {
   }, []);
 
   return (
-    <StyledHeroRoot ismobile={isMobile}>
-      <StyledHeroContainer>
-        <StyledHeroGrid container>
-          <StyledHeroText
-            item
-            xs={12}
-            md={6}
-          >
-            <StyledHeroGreetingText>
-              Hello, I'm
-            </StyledHeroGreetingText>
-            <StyledHeroTitle>
-              <Typewriter
-                options={{
-                  strings: ["CANER ATES", "iOS Developer"],
-                  cursor: "",
-                  delay: 50,
-                  deleteSpeed: 20,
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </StyledHeroTitle>
-
-            <StyledHeroSubText>
-              Designing and developing<br /> native iOS applications..
-            </StyledHeroSubText>
-
-
-
-            <StyledResumeLink
-              href={
-                process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2024-5.pdf"
-              }
-              target="_blank"
+    <Scroll.Element name="Home" >
+      <StyledHeroRoot ismobile={isMobile}>
+        <StyledHeroContainer>
+          <StyledHeroGrid container>
+            <StyledHeroText
+              item
+              xs={12}
+              md={6}
             >
-              <Typography>Resume</Typography>
-            </StyledResumeLink>
+              <StyledHeroGreetingText>
+                Hello, I'm
+              </StyledHeroGreetingText>
+              <StyledHeroTitle>
+                <Typewriter
+                  options={{
+                    strings: ["CANER ATES", "iOS Developer"],
+                    cursor: "",
+                    delay: 50,
+                    deleteSpeed: 20,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </StyledHeroTitle>
+
+              <StyledHeroSubText>
+                Designing and developing<br /> native iOS applications..
+              </StyledHeroSubText>
 
 
-          </StyledHeroText>
 
-          <StyledHeroGridItem
-            item
-            xs={12}
-            md={5}
-          >
-            <StyledHeroImage alt="Image of Caner Ates" src={heroImg} />
-          </StyledHeroGridItem>
-          
-          <StyledAnchorLinks 
-          item
-          xs = {12}
-          md={1}
-          >
-            <AnchorLinks />
+              <StyledResumeLink
+                href={
+                  process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2024-5.pdf"
+                }
+                target="_blank"
+              >
+                <Typography>Resume</Typography>
+              </StyledResumeLink>
 
-          </StyledAnchorLinks>
-          
-        </StyledHeroGrid>
-      </StyledHeroContainer>
-    </StyledHeroRoot>
+
+            </StyledHeroText>
+
+            <StyledHeroGridItem
+              item
+              xs={12}
+              md={5}
+            >
+              <StyledHeroImage alt="Image of Caner Ates" src={heroImg} />
+            </StyledHeroGridItem>
+
+            <StyledAnchorLinks
+              item
+              xs={12}
+              md={1}
+            >
+              <AnchorLinks />
+
+            </StyledAnchorLinks>
+
+          </StyledHeroGrid>
+        </StyledHeroContainer>
+      </StyledHeroRoot>
+    </Scroll.Element>
   )
 }
 

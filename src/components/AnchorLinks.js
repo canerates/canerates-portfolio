@@ -51,32 +51,32 @@ const AnchorLinks = () => {
     return (
         <StyledAnchorLinksContainer>
             <StyledAnchorLink
-                href={"www.google.com"}
+                href={"https://www.linkedin.com/in/canerates"}
                 target="_blank"
             >
                 <LinkedInIcon />
             </StyledAnchorLink>
             <StyledAnchorLink
-                href={"www.google.com"}
+                href={"https://github.com/canerates"}
                 target="_blank"
             >
                 <GitHubIcon />
             </StyledAnchorLink>
             <StyledAnchorLink
-                href={"www.google.com"}
+                href={"https://apps.apple.com/developer/caner-ates/id1735282034"}
                 target="_blank"
             >
                 <AppleIcon />
             </StyledAnchorLink>
             <StyledAnchorLink
-                href={"www.google.com"}
+                href={"mailto:cnrates@gmail.com"}
                 target="_blank"
             >
                 <MailIcon />
             </StyledAnchorLink>
 
             <StyledAnchorLink
-                href={"www.google.com"}
+                href={"https://www.facebook.com/cnrates"}
                 target="_blank"
             >
                 <FacebookIcon />
