@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import {
   TimelineContent,
   TimelineItem,
@@ -7,7 +7,7 @@ import {
 import { Typography, styled, Link } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } from "./Generic";
+import { StyledTimelineDot, StyledTimelineConnector } from "./Generic";
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem !important",
@@ -81,8 +81,8 @@ const StyledTimeStamp = styled(Typography)(({ theme }) => ({
 
 }));
 
-const StyledAchievementsContainer = styled("ul")(({ theme, expanded }) => ({
-  maxHeight: expanded ? 'auto' : '0',
+const StyledAchievementsContainer = styled("ul")(({ theme, expanded, maxHeight }) => ({
+  maxHeight: expanded ? maxHeight : '0',
   opacity: expanded ? 1 : 0,
   overflow: 'hidden',
   transition: 'max-height 0.5s ease-out, opacity 0.5s ease-out',
@@ -141,6 +141,15 @@ const StyledDetailButton = styled("a")(({ theme }) => ({
 const WorkCard = ({ work, isLastCard }) => {
 
   const [expanded, setExpanded] = useState(false);
+  const containerRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState('0px');
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const scrollHeight = containerRef.current.scrollHeight;
+      setMaxHeight(expanded ? `${scrollHeight}px` : '0px');
+    }
+  }, [expanded]);
 
   const handleToggle = () => {
     setExpanded(!expanded);
@@ -174,8 +183,7 @@ const WorkCard = ({ work, isLastCard }) => {
           <Typography>{expanded ? "See less" : "See more" }</Typography>
         </StyledDetailButton>
 
-
-        <StyledAchievementsContainer expanded={expanded}>
+        <StyledAchievementsContainer ref={containerRef} expanded={expanded} maxHeight={maxHeight}>
           {work.achievements &&
             work.achievements.map((achievement, index) => (
               <StyledAchievementItem key={index}>
@@ -194,7 +202,6 @@ const WorkCard = ({ work, isLastCard }) => {
 
             ))}
         </StyledAchievementsContainer>
-
 
       </TimelineContent>
     </TimelineItem>
