@@ -79,7 +79,7 @@ const Experience = () => {
             experienceContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="Experience" subText="I have eight years of experience in software development including four years of solid background in web development, and four years of continuous growth and deep passion for iOS development." />
+          <PageHeader title="Experience" subText="I have over eight years of experience in software development including four years of solid background in web development, and four years of continuous growth and deep passion for the iOS development." />
         </StyledGenericContainer>
         <StyledExperienceContainer>
           <StyledExperienceGrid container rowSpacing={6} columnSpacing={12}>

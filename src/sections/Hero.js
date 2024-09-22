@@ -58,7 +58,7 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
   opacity: theme.palette.heroImage.opacity,
 
   [theme.breakpoints.down("lg")]: {
-    maxWidth: "85%",
+    maxWidth: "80%",
   },
   [theme.breakpoints.down("md")]: {
     maxWidth: "45%",

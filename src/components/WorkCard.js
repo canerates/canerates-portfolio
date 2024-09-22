@@ -5,8 +5,8 @@ import {
   TimelineSeparator
 } from "@mui/lab";
 import { Typography, styled, Link } from "@mui/material";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { StyledTimelineDot, StyledTimelineConnector } from "./Generic";
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
@@ -91,7 +91,11 @@ const StyledAchievementsContainer = styled("ul")(({ theme, expanded, maxHeight }
   paddingLeft: '1.5rem',
   '& li': {
     marginBottom: '0.5rem',
-    fontSize: '2rem',
+  },
+  [theme.breakpoints.down("sm")]: {
+
+    listStyleType: 'none',
+    paddingLeft: '0.25rem',
   },
 
 }));
@@ -124,6 +128,7 @@ const StyledDetailButton = styled("a")(({ theme }) => ({
   cursor: "pointer",
   textDecoration: "none",
   marginTop: "1rem",
+  marginBottom: "1rem",
   "& p": {
     borderRadius: "8px !important",
     padding: "0.25rem 0.5rem",
@@ -159,7 +164,7 @@ const WorkCard = ({ work, isLastCard }) => {
     <TimelineItem>
       <TimelineSeparator sx={{ marginLeft: "8px" }}>
         <StyledTimelineDot onClick={handleToggle} style={{ cursor: 'pointer' }}>
-          {expanded ? <ExpandLessIcon fontSize="small" /> : <ExpandMoreIcon fontSize="small" />}
+          {expanded ? <ExpandMoreIcon fontSize="small" /> : <ChevronRightIcon fontSize="small" />}
         </StyledTimelineDot>
         {!isLastCard && <StyledTimelineConnector sx={{ height: 80 }} />}
       </TimelineSeparator>
@@ -176,11 +181,11 @@ const WorkCard = ({ work, isLastCard }) => {
           <StyledTimeStamp> {work.timeStamp}</StyledTimeStamp>
         }
 
-        <StyledDetailButton 
+        <StyledDetailButton
           onClick={handleToggle}
           style={{ cursor: 'pointer' }}
         >
-          <Typography>{expanded ? "See less" : "See more" }</Typography>
+          <Typography>{expanded ? "See less" : "See more"}</Typography>
         </StyledDetailButton>
 
         <StyledAchievementsContainer ref={containerRef} expanded={expanded} maxHeight={maxHeight}>
