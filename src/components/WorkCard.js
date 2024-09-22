@@ -8,7 +8,6 @@ import { Typography, styled, Link } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { StyledTimelineContent, StyledTimelineDot, StyledTimelineConnector } from "./Generic";
-import { transform } from 'framer-motion';
 
 const StyledCardTitle = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem !important",
@@ -21,9 +20,9 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
   paddingBottom: '0.1rem',
   transition: "transform 150ms ease-in-out 0s !important",
   "&:hover": {
-      transform: "translateX(4px)",
-      color: theme.palette.text.secondary,
-    },
+    transform: "translateX(4px)",
+    color: theme.palette.text.secondary,
+  },
   "&::after": {
     content: '""',
     position: 'absolute',
@@ -35,12 +34,18 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
     transform: 'scaleY(1.2)',
     transformOrigin: 'left bottom'
   },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1rem !important",
+  },
 }));
 
 const StyledCardCompanyText = styled(Typography)(({ theme }) => ({
   fontSize: "1.1rem !important",
   fontWeight: "500",
   color: theme.palette.text.primary,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.95rem !important",
+  },
 }));
 
 const StyledCardDateText = styled(Typography)(({ theme }) => ({
@@ -48,6 +53,9 @@ const StyledCardDateText = styled(Typography)(({ theme }) => ({
   fontWeight: "400",
   fontStyle: "italic",
   color: theme.palette.text.secondary,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.95rem !important",
+  },
 
 }));
 
@@ -56,15 +64,25 @@ const StyledLocationText = styled(Typography)(({ theme }) => ({
   fontWeight: "400",
   fontStyle: "italic",
   color: theme.palette.text.secondary,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.95rem !important",
+  },
 
 }));
 
-const StyledTimeStamp = styled("span")({
+const StyledTimeStamp = styled(Typography)(({ theme }) => ({
+  fontSize: "1.1rem !important",
   fontWeight: "600",
-});
+  fontStyle: "italic",
+  color: theme.palette.text.secondary,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.95rem !important",
+  },
+
+}));
 
 const StyledAchievementsContainer = styled("ul")(({ theme, expanded }) => ({
-  maxHeight: expanded ? '20rem' : '0',
+  maxHeight: expanded ? 'auto' : '0',
   opacity: expanded ? 1 : 0,
   overflow: 'hidden',
   transition: 'max-height 0.5s ease-out, opacity 0.5s ease-out',
@@ -83,7 +101,10 @@ const StyledAchievementItem = styled(Typography)(({ theme }) => ({
   fontSize: "1rem !important",
   fontWeight: "400",
   marginTop: "0.75rem",
-  marginBottom: "0.75rem"
+  marginBottom: "0.75rem",
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.85rem !important",
+  },
 }));
 
 const StyledAchievementLink = styled(Link)(({ theme }) => ({
@@ -93,9 +114,27 @@ const StyledAchievementLink = styled(Link)(({ theme }) => ({
   color: theme.palette.text.secondary,
   transition: "transform 150ms ease-in-out 0s !important",
   "&:hover": {
-      transform: "translateX(4px)",
-      color: theme.palette.text.secondary,
+    transform: "translateX(4px)",
+    color: theme.palette.text.secondary,
+  },
+}));
+
+const StyledDetailButton = styled("a")(({ theme }) => ({
+  display: "inline-block",
+  cursor: "pointer",
+  textDecoration: "none",
+  marginTop: "1rem",
+  "& p": {
+    borderRadius: "8px !important",
+    padding: "0.25rem 0.5rem",
+    fontSize: "0.85rem",
+    backgroundColor: theme.palette.button.backgroundPrimary + " !important",
+    color: theme.palette.button.foregroundPrimary,
+    transition: "transform 150ms ease-in-out 0s !important",
+    "&:hover": {
+      transform: "scale(1.08)",
     },
+  },
 }));
 
 
@@ -120,14 +159,20 @@ const WorkCard = ({ work, isLastCard }) => {
         <StyledCardCompanyText>{work.company}</StyledCardCompanyText>
         <StyledCardDateText>
           {work.startDate} - {work.endDate}
-          {work.timeStamp &&
-            <>
-              <span> .</span>
-              <StyledTimeStamp> {work.timeStamp}</StyledTimeStamp>
-            </>
-          }
+
         </StyledCardDateText>
+
         <StyledLocationText>{work.location && work.location}</StyledLocationText>
+        {work.timeStamp &&
+          <StyledTimeStamp> {work.timeStamp}</StyledTimeStamp>
+        }
+
+        <StyledDetailButton 
+          onClick={handleToggle}
+          style={{ cursor: 'pointer' }}
+        >
+          <Typography>{expanded ? "See less" : "See more" }</Typography>
+        </StyledDetailButton>
 
 
         <StyledAchievementsContainer expanded={expanded}>

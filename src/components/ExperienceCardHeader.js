@@ -12,6 +12,9 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
     fontSize: "1.5rem !important",
     fontWeight: "600",
     color: theme.palette.text.primary,
+    [theme.breakpoints.down("sm")]: {
+        fontSize: "1.25rem !important",
+      },
 }));
 
 const ExperienceCardHeader = ({ title }) => {
