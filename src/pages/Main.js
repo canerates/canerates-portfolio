@@ -5,6 +5,7 @@ import About from "../sections/About"
 import Experience from "../sections/Experience"
 import Projects from "../sections/Projects"
 import Hero from "../sections/Hero"
+import Footer from "../sections/Footer"
 
 
 const StyledMainPage = styled("div")(({ theme }) => ({
@@ -26,9 +27,9 @@ const Main = () => {
           <About />
           <Experience />
           <Projects />
-
         </StyledMainContainer>
       </StyledMainPage>
+      <Footer />
     </>
   )
 }
