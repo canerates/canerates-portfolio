@@ -15,6 +15,7 @@ import experiences from "../content/experiences.json"
 
 const StyledExperienceContainer = styled(Container)(({ theme }) => ({
   marginTop: "1rem",
+  marginBottom: "1rem",
   display: "flex",
   flexDirection: "column",
   boxSizing: "unset !important",

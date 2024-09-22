@@ -10,7 +10,8 @@ import { ProjectCard } from '../components/ProjectCard'
 import projects from "../content/projects.json"
 
 const StyledProjectsContainer = styled(Container)(({ theme }) => ({
-  marginTop: "3rem",
+  marginTop: "1rem",
+  marginBottom: "1rem",
   display: "flex",
   flexDirection: "column",
   boxSizing: "unset !important",
@@ -29,7 +30,8 @@ const StyledProjectsGrid = styled(Grid)(({ theme }) => ({
   width: "100%",
   marginLeft: "0 !important",
   marginTop: "0 !important",
-  padding: "1rem",
+  paddingBottom: "1rem",
+  paddingTop: "1rem",
 }));
 
 const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({

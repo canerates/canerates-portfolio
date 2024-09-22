@@ -10,8 +10,8 @@ import skillsData from "../content/skills.json"
 import SkillCard from "../components/SkillCard"
 
 const StyledAboutContainer = styled(Container)(({ theme }) => ({
-  marginTop: "2rem",
-  marginBottom: "2rem",
+  marginTop: "1rem",
+  marginBottom: "1rem",
   display: "flex",
   flexDirection: "column",
   boxSizing: "unset !important",
@@ -20,7 +20,7 @@ const StyledAboutContainer = styled(Container)(({ theme }) => ({
   justifyContent: "center"
 }));
 
-const StyledAboutSkillsContainer = styled(Grid)(({ theme }) => ({
+const StyledAboutSkillsGrid = styled(Grid)(({ theme }) => ({
   marginLeft: "0 !important",
   marginTop: "0 !important",
   padding: "1rem"
@@ -90,7 +90,7 @@ const About = () => {
         <StyledAboutContainer >
         <InView threshold={0.2} triggerOnce={true}>
               {({ ref, inView }) => (
-                <StyledAboutSkillsContainer
+                <StyledAboutSkillsGrid
                   ref={ref}
                   inView={inView}
                   sx={
@@ -111,7 +111,7 @@ const About = () => {
                       <SkillCard key={item.id} skill={item} />
                     )}
                   />
-                </StyledAboutSkillsContainer>
+                </StyledAboutSkillsGrid>
               )}
             </InView>
         </StyledAboutContainer>

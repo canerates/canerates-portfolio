@@ -6,6 +6,7 @@ export const StyledGenericRoot = styled("section")(({ theme, ismobile }) => ({
     flexWrap: "wrap",
     alignContent: "center",
     justifyContent: "center",
+    marginBottom: "1rem",
     // minHeight: "100vh",
     minHeight: ismobile ? "auto" : "100vh",
     backgroundColor: theme.palette.background.primary,
@@ -19,6 +20,7 @@ export const StyledGenericContainer = styled(Container)({
     alignSelf: "center",
     boxSizing: "unset !important",
     maxWidth: "1000px !important",
+    
 });
 
 export const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({

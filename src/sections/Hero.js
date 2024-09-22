@@ -14,28 +14,33 @@ const StyledHeroRoot = styled("section")(({ theme, ismobile }) => ({
   alignItems: "center",
   minHeight: ismobile ? "auto" : "100vh",
   // minHeight: "100vh",
+  marginBottom: "1rem",
 }));
 
 const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   display: "flex !important",
-  flex: "1",
+  // flex: "1",
   alignItems: "center",
   alignSelf: "center",
   boxSizing: "unset !important",
   maxWidth: "1000px !important",
   width: "unset",
-  [theme.breakpoints.up("sm")]: {
-    marginTop: "2rem",
-  },
-  [theme.breakpoints.down("md")]: {
-    marginBottom: "2rem",
-  },
+  // marginTop: "1rem",
+  // marginBottom: "1rem",
+  
+  // [theme.breakpoints.up("sm")]: {
+  //   marginTop: "1rem",
+  // },
+  // [theme.breakpoints.down("md")]: {
+  //   marginBottom: "1rem",
+  // },
 }));
 
 const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
   alignItems: "center",
   justifyContent: "space-around",
   width: "auto",
+  padding: "1rem",
   marginBottom: ismobile ? "3.5rem" : "0rem",
 }));
 
@@ -103,7 +108,7 @@ const StyledHeroGreetingText = styled(Typography)(({ theme }) => ({
   fontWeight: "bold !important",
   textAlign: "left",
   color: theme.palette.text.primary,
-  fontSize: "clamp(20px, 2vw, 26px) !important",
+  fontSize: "clamp(24px, 3vw, 38px) !important",
 
   [theme.breakpoints.down("md")]: {
     textAlign: "center"
@@ -114,7 +119,7 @@ const StyledHeroTitle = styled(Typography)(({ theme }) => ({
   fontWeight: "bold !important",
   color: theme.palette.text.primary,
   marginBottom: theme.spacing(0),
-  fontSize: "clamp(34px, 4vw, 55px) !important",
+  fontSize: "clamp(32px, 4vw, 56px) !important",
   [theme.breakpoints.up("md")]: {
     whiteSpace: "nowrap",
   },
@@ -185,10 +190,10 @@ const Hero = ({ img }) => {
               xs={12}
               md={6}
             >
-              <StyledHeroGreetingText>
+              <StyledHeroGreetingText component="h1">
                 Hello, I'm
               </StyledHeroGreetingText>
-              <StyledHeroTitle>
+              <StyledHeroTitle component="h1">
                 <Typewriter
                   options={{
                     strings: ["CANER ATES", "iOS Developer"],
@@ -201,7 +206,7 @@ const Hero = ({ img }) => {
                 />
               </StyledHeroTitle>
 
-              <StyledHeroSubText>
+              <StyledHeroSubText component="h1">
                 Designing and developing<br /> native iOS applications..
               </StyledHeroSubText>
 
