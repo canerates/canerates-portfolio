@@ -26,14 +26,6 @@ const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   maxWidth: "1000px !important",
   width: "unset",
   marginTop: "2rem",
-  // marginBottom: "1rem",
-  
-  // [theme.breakpoints.up("sm")]: {
-  //   marginTop: "1rem",
-  // },
-  // [theme.breakpoints.down("md")]: {
-  //   marginBottom: "1rem",
-  // },
 }));
 
 const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
