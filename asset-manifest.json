@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.034cd998.css",
-    "main.js": "/static/js/main.b81b9258.js",
+    "main.js": "/static/js/main.9328dfe4.js",
     "static/js/453.9252977a.chunk.js": "/static/js/453.9252977a.chunk.js",
-    "static/media/caner-cropped.png": "/static/media/caner-cropped.888c6de2cba4ac0add4f.png",
+    "static/media/caner-cropped2.webp": "/static/media/caner-cropped2.d114b85f811786091704.webp",
     "index.html": "/index.html",
     "main.034cd998.css.map": "/static/css/main.034cd998.css.map",
-    "main.b81b9258.js.map": "/static/js/main.b81b9258.js.map",
+    "main.9328dfe4.js.map": "/static/js/main.9328dfe4.js.map",
     "453.9252977a.chunk.js.map": "/static/js/453.9252977a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.034cd998.css",
-    "static/js/main.b81b9258.js"
+    "static/js/main.9328dfe4.js"
   ]
 }
