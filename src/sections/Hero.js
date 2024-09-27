@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Container, Grid, Typography, styled } from "@mui/material"
 import * as Scroll from "react-scroll"
 import Typewriter from "typewriter-effect"
-import heroImg from "../assets/hero/caner-cropped.png"
 import AnchorLinks from "../components/AnchorLinks"
 
 const StyledHeroRoot = styled("section")(({ theme, ismobile }) => ({
@@ -221,7 +220,7 @@ const Hero = ({ img }) => {
               xs={12}
               md={5}
             >
-              <StyledHeroImage alt="Image of Caner Ates" src={heroImg} />
+              <StyledHeroImage alt="Image of Caner Ates" src={img} />
             </StyledHeroGridItem>
 
             <StyledAnchorLinks

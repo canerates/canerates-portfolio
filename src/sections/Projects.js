@@ -39,7 +39,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
   display: "flex",
   height: "290px",
   marginBottom: "2.5rem",
-  borderRadius: "0.75rem",
+  borderRadius: "1rem",
   boxShadow: `0px 0px 10px ${theme.palette.project.shadowPrimary}70`,
   backgroundColor: `${theme.palette.project.backgroundPrimary}70`,
   paddingTop: "0 !important",
