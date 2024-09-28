@@ -12,13 +12,11 @@ const StyledHeroRoot = styled("section")(({ theme, ismobile }) => ({
   flexDirection: "column",
   alignItems: "center",
   minHeight: ismobile ? "auto" : "100vh",
-  // minHeight: "100vh",
   marginBottom: "1rem",
 }));
 
 const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   display: "flex !important",
-  // flex: "1",
   alignItems: "center",
   alignSelf: "center",
   boxSizing: "unset !important",
@@ -39,7 +37,6 @@ const StyledHeroGridItem = styled(Grid)(({ theme }) => ({
   display: "flex",
   padding: "0rem",
   alignItems: "center",
-  // height: "auto",
   justifyContent: "center",
   [theme.breakpoints.down("md")]: {
     order: "1",
@@ -74,17 +71,7 @@ const StyledHeroImage = styled("img")(({ theme }) => ({
 const StyledHeroText = styled(Grid)(({ theme }) => ({
   animation: "fadeIn",
   animationDuration: "2s",
-  // height: "290px",
-  // width: "50%",
   paddingLeft: "0 !important",
-  // [theme.breakpoints.down("md")]: {
-  //   width: "80%",
-  //   margin: "0",
-  // },
-  // [theme.breakpoints.down("sm")]: {
-  //   width: "90%",
-  //   margin: "0",
-  // },
   [theme.breakpoints.down("md")]: {
     width: "100%",
     margin: "0",
@@ -149,7 +136,6 @@ const StyledAnchorLinks = styled(Grid)(({ theme }) => ({
   animation: "fadeIn",
   animationDuration: "2s",
   paddingLeft: "0 !important",
-  // height: "700px",
   display: "flex",
   flexDirection: "column",
   [theme.breakpoints.down("md")]: {
@@ -200,8 +186,6 @@ const Hero = ({ img }) => {
               <StyledHeroSubText component="h1">
                 Designing and developing<br /> native iOS applications..
               </StyledHeroSubText>
-
-
 
               <StyledResumeLink
                 href={

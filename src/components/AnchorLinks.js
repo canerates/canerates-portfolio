@@ -4,13 +4,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import MailIcon from "@mui/icons-material/Mail"
 import AppleIcon from "@mui/icons-material/Apple"
 import FacebookIcon from "@mui/icons-material/Facebook"
+import InstagramIcon from "@mui/icons-material/Instagram"
 
 const StyledAnchorLinksContainer = styled("div")(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignContent: "center",
-    // backgroundColor: "red",
     height: "100vh",
     [theme.breakpoints.down("md")]: {
         order: "2",
@@ -68,11 +68,12 @@ const AnchorLinks = () => {
             >
                 <AppleIcon />
             </StyledAnchorLink>
+            
             <StyledAnchorLink
-                href={"mailto:cnrates@gmail.com"}
+                href={"https://www.instagram.com/cnrates"}
                 target="_blank"
             >
-                <MailIcon />
+                <InstagramIcon />
             </StyledAnchorLink>
 
             <StyledAnchorLink
@@ -80,6 +81,13 @@ const AnchorLinks = () => {
                 target="_blank"
             >
                 <FacebookIcon />
+            </StyledAnchorLink>
+
+            <StyledAnchorLink
+                href={"mailto:cnrates@gmail.com"}
+                target="_blank"
+            >
+                <MailIcon />
             </StyledAnchorLink>
             
         </StyledAnchorLinksContainer>

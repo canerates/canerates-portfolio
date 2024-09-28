@@ -177,8 +177,6 @@ export const ProjectCard = ({ project }) => {
           )}
 
         </StyledProjectsLinks>
-
-
       </StyledProjectsTextField>
     </>
   )

@@ -180,6 +180,14 @@ const StyledAppBarDrawerLink = styled(Link)(({ theme }) => ({
   },
 }));
 
+const StyledLogo = styled(Link)(({ theme }) => ({
+  cursor: "pointer",
+  "& svg": {
+    fill: theme.palette.logo.primary,
+  },
+}));
+
+
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   const MuiTheme = useTheme();
@@ -338,7 +346,12 @@ const Navbar = () => {
       <StyledAppBar position='fixed' isScrolled={isScrolled}>
         <StyledAppBarContainer>
           <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-            <Typography>
+            <StyledLogo
+              href="#Home"
+              to="Home"
+              smooth={true}
+              duration={1000}
+            >
               <svg
                 viewBox="0 0 370 300"
                 style={{
@@ -353,10 +366,9 @@ const Navbar = () => {
               >
                 <path
                   d="M 213.160156 47.34375 L 264.09375 135.625 L 320.390625 233.199219 L 321.730469 235.523438 L 375.019531 327.882812 L 324.132812 327.882812 L 270.847656 235.523438 L 270.84375 235.523438 L 213.207031 135.625 L 155.570312 235.523438 L 55.15625 235.523438 C 39.96875 235.523438 26.175781 229.320312 16.191406 219.328125 C 6.207031 209.339844 0.0117188 195.539062 0.0117188 180.339844 L 0.0117188 103.382812 C 0.0117188 88.183594 6.207031 74.382812 16.191406 64.394531 C 26.175781 54.402344 39.96875 48.199219 55.15625 48.199219 L 164.210938 48.199219 L 138.65625 92.488281 L 55.15625 92.488281 C 52.183594 92.488281 49.46875 93.71875 47.484375 95.707031 C 45.503906 97.691406 44.269531 100.410156 44.269531 103.382812 L 44.269531 180.339844 C 44.269531 183.3125 45.503906 186.03125 47.484375 188.015625 C 49.46875 190 52.183594 191.234375 55.15625 191.234375 L 130.140625 191.234375 Z M 213.160156 47.34375 "
-                  style={{ fill: MuiTheme.palette.logo.primary}}
                 />
               </svg>
-            </Typography>
+            </StyledLogo>
             {collapse ? drawer : <StyledNavbarContainer>{navbar}</StyledNavbarContainer>}
             {!collapse &&
               <div
