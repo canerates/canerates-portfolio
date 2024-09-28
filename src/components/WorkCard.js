@@ -35,7 +35,7 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
     transformOrigin: 'left bottom'
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "1rem !important",
+    fontSize: "1.1rem !important",
   },
 }));
 
@@ -44,7 +44,7 @@ const StyledCardCompanyText = styled(Typography)(({ theme }) => ({
   fontWeight: "500",
   color: theme.palette.text.primary,
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.95rem !important",
+    fontSize: "1rem !important",
   },
 }));
 
@@ -54,18 +54,18 @@ const StyledCardDateText = styled(Typography)(({ theme }) => ({
   fontStyle: "italic",
   color: theme.palette.text.secondary,
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.95rem !important",
+    fontSize: "1rem !important",
   },
 
 }));
 
 const StyledLocationText = styled(Typography)(({ theme }) => ({
-  fontSize: "1rem !important",
+  fontSize: "1.1rem !important",
   fontWeight: "400",
   fontStyle: "italic",
   color: theme.palette.text.secondary,
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.95rem !important",
+    fontSize: "1rem !important",
   },
 
 }));
@@ -76,7 +76,7 @@ const StyledTimeStamp = styled(Typography)(({ theme }) => ({
   fontStyle: "italic",
   color: theme.palette.text.secondary,
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.95rem !important",
+    fontSize: "1rem !important",
   },
 
 }));
@@ -107,7 +107,7 @@ const StyledAchievementItem = styled(Typography)(({ theme }) => ({
   marginTop: "0.75rem",
   marginBottom: "0.75rem",
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.85rem !important",
+    fontSize: "0.9rem !important",
   },
 }));
 

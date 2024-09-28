@@ -85,6 +85,9 @@ export const lightTheme = createTheme({
     },
     heroImage: {
       opacity: "0.9"
+    },
+    logo: {
+      primary: "#840e0e"
     }
   }
 });
@@ -174,6 +177,9 @@ export const darkTheme = createTheme({
     },
     heroImage: {
       opacity: "0.7"
+    },
+    logo: {
+      primary: "#840e0e"
     }
   },
 });

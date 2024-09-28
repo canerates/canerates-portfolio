@@ -103,5 +103,20 @@
         "id": 21,
         "title": "Combine",
         "isInked": true
+    },
+    {
+        "id": 22,
+        "title": "GCD",
+        "isInked": false
+    },
+    {
+        "id": 23,
+        "title": "Multithreading",
+        "isInked": false
+    },
+    {
+        "id": 23,
+        "title": "SPM & Cocoapods",
+        "isInked": true
     }
 ]

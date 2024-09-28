@@ -7,9 +7,6 @@ import Test from "./pages/Test"
 
 import { lightTheme, darkTheme } from "./utils/Theme";
 
-import './App.css';
-
-
 function App() {
   const [theme, setTheme] = useState(() => {
     return window.localStorage.getItem("theme") || "dark";

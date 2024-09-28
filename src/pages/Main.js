@@ -7,7 +7,7 @@ import Projects from "../sections/Projects"
 import Hero from "../sections/Hero"
 import Footer from "../sections/Footer"
 import Loader from "../components/Loader"
-import heroAvatar from "../assets/hero/caner-cropped2.webp"
+import heroAvatar from "../assets/hero/caner.webp"
 
 
 const StyledMainPage = styled("div")(({ theme }) => ({

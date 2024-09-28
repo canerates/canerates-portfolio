@@ -34,7 +34,7 @@ const StyledProjectsTitle = styled(Typography)(({ theme }) => ({
 const StyledProjectsSubText = styled(Typography)(({ theme }) => ({
   fontSize: "1rem !important",
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.8rem !important",
+    fontSize: "0.9rem !important",
   },
 }));
 
@@ -53,7 +53,7 @@ const StyledProjectsSkillText = styled(Typography)(({ theme }) => ({
   color: "#000",
   fontWeight: "600",
   [theme.breakpoints.down("sm")]: {
-    fontSize: "0.7rem !important",
+    fontSize: "0.8rem !important",
   },
 }));
 

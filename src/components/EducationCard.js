@@ -11,7 +11,7 @@ const StyledCardTitle = styled(Typography)(({ theme }) => ({
     fontWeight: "600",
     color: theme.palette.text.primary,
     [theme.breakpoints.down("sm")]: {
-        fontSize: "1rem !important",
+        fontSize: "1.1rem !important",
     },
 }));
 
@@ -20,7 +20,7 @@ const StyledCardSchoolText = styled(Typography)(({ theme }) => ({
     fontWeight: "400",
     color: theme.palette.text.primary,
     [theme.breakpoints.down("sm")]: {
-        fontSize: "0.95rem !important",
+        fontSize: "1rem !important",
     },
 }));
 
@@ -29,17 +29,17 @@ const StyledCardDateText = styled(Typography)(({ theme }) => ({
     fontWeight: "400",
     color: theme.palette.text.secondary,
     [theme.breakpoints.down("sm")]: {
-        fontSize: "0.95rem !important",
+        fontSize: "1rem !important",
     },
 }));
 
 const StyledLocationText = styled(Typography)(({ theme }) => ({
-    fontSize: "1rem !important",
+    fontSize: "1.1rem !important",
     fontWeight: "400",
     fontStyle: "italic",
     color: theme.palette.text.secondary,
     [theme.breakpoints.down("sm")]: {
-        fontSize: "0.95rem !important",
+        fontSize: "1rem !important",
     },
 
 }));
