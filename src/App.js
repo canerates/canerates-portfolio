@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import { ThemeContext } from "./utils/ThemeContext";
 import Main from "./pages/Main"
-import Test from "./pages/Test"
 
 import { lightTheme, darkTheme } from "./utils/Theme";
 
@@ -21,7 +20,6 @@ function App() {
         <Router>
             <Routes>
               <Route exact path="/" element={<Main />} />
-              <Route path="/test" element={<Test />} />
             </Routes>
           </Router>
         </CssBaseline>
