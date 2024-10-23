@@ -30,7 +30,7 @@ const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
     ? "1px 0px 4px -1px rgb(0 0 0 / 20%), 0px 2px 20px 0px rgb(0 0 0 / 14%), 1px -1px 12px 0px rgb(0 0 0 / 12%) !important"
     : "none !important",
   padding: isScrolled ? "0.5rem 5rem 0.5rem 5rem" : "2rem 5rem 2rem 5rem",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     padding: isScrolled ? "0.5rem 2rem 0.5rem 2rem" : "1rem 2rem 1rem 2rem",
   },
 }));
@@ -42,7 +42,7 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
   maxWidth: "1200px",
   justifyContent: "center",
   width: "90vw !important",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     width: "100vw !important",
   },
 }));
@@ -102,7 +102,7 @@ const StyledAppBarLink = styled(Link)(({ theme }) => ({
     transform: "none",
     transition: "transform 150ms ease-in-out 0s !important",
     cursor: "pointer",
-    fontSize: "1.2rem",
+    fontSize: "1.3rem",
     padding: "0.5rem",
     textTransform: 'none',
     "&:hover": {
