@@ -63,8 +63,8 @@
       "title": "iOS Developer",
       "company": "Freelance",
       "startDate": "05/2023",
-      "endDate": "Present",
-      "timeStamp": "",
+      "endDate": "10/2024",
+      "timeStamp": "1 yr 6 mos",
       "achievements": [
         {
           "description": "Design and development of native iOS applications that are published to App Store.",
@@ -80,6 +80,22 @@
           "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
           "linkTitle": "PasswOCD: Password Generator",
           "link": "https://apps.apple.com/app/passwocd-password-generator/id6529549759"
+        }
+      ]
+      
+    },
+    {
+      "id": "4",
+      "title": "iOS Developer",
+      "company": "Seenooks",
+      "startDate": "11/2024",
+      "endDate": "Present",
+      "timeStamp": "",
+      "achievements": [
+        {
+          "description": "Design and development of native iOS AR LIDAR application.",
+          "linkTitle": "",
+          "link": ""
         }
       ]
       
