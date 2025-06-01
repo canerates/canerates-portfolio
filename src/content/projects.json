@@ -15,7 +15,7 @@
         "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
         "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "CoreData"],
         "websiteLink": "https://moblear.canerates.com",
-        "appstoreLink": "https://apps.apple.com/app/moblear-real-time-design-3d/id6479243434"
+        "appstoreLink": "https://apps.apple.com/app/id6479243434"
       },
       {
         "id": "2",
@@ -24,6 +24,15 @@
         "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
         "skills": ["Swift", "SwiftUI", "CoreData", "CloudKit"],
         "websiteLink": "https://passwocd.canerates.com",
-        "appstoreLink": "https://apps.apple.com/app/passwocd-password-generator/id6529549759"
+        "appstoreLink": "https://apps.apple.com/app/id6529549759"
+      },
+      {
+        "id": "3",
+        "title": "Seenooks AR Capture",
+        "image": "../images/arcapture.png",
+        "description": "Real-time LiDAR scanning application to generate 3D models of real-world objects in minutes.",
+        "skills": ["Swift", "SwiftUI", "CoreData", "ARKit", "RealityKit", "Object Capture"],
+        "websiteLink": "https://www.seenooks.com",
+        "appstoreLink": "https://apps.apple.com/app/id6743469973"
       }
 ]

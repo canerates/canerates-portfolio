@@ -189,7 +189,7 @@ const Hero = ({ img }) => {
 
               <StyledResumeLink
                 href={
-                  process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2024-7.pdf"
+                  process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2025-1.pdf"
                 }
                 target="_blank"
               >

@@ -85,7 +85,7 @@ const About = () => {
             aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="About" subText= "I have over four years of experience in building native iOS applications and have successfully published two original apps on the App Store. Below is a list of languages and technologies I have worked with." />
+          <PageHeader title="About" subText= "I have over five years of experience in building native iOS applications and have successfully published two original personal apps on the App Store. Below is a list of languages and technologies I have worked with." />
         </StyledGenericContainer>
         <StyledAboutContainer >
         <InView threshold={0.2} triggerOnce={true}>

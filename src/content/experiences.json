@@ -74,12 +74,12 @@
         {
           "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
           "linkTitle": "MobleAR: Real-time Design 3D",
-          "link": "https://apps.apple.com/app/moblear-real-time-design-3d/id6479243434"
+          "link": "https://apps.apple.com/app/id6479243434"
         },
         {
           "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
           "linkTitle": "PasswOCD: Password Generator",
-          "link": "https://apps.apple.com/app/passwocd-password-generator/id6529549759"
+          "link": "https://apps.apple.com/app/id6529549759"
         }
       ]
       
@@ -95,8 +95,8 @@
       "achievements": [
         {
           "description": "Design and development of native iOS AR LIDAR application.",
-          "linkTitle": "",
-          "link": ""
+          "linkTitle": "Seenooks AR Capture",
+          "link": "https://apps.apple.com/app/id6743469973"
         }
       ]
       
