@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["WLNV43PV34.com.seenooks.ARViewer"],
+        "paths": ["/?productId=*"]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": ["WLNV43PV34.com.seenooks.ARViewer.Clip"]
+  }
+}
