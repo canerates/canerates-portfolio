@@ -34,5 +34,14 @@
         "skills": ["Swift", "SwiftUI", "CoreData", "ARKit", "RealityKit", "Object Capture"],
         "websiteLink": "https://www.seenooks.com",
         "appstoreLink": "https://apps.apple.com/app/id6743469973"
+      },
+      {
+        "id": "4",
+        "title": "Seenooks AR Viewer",
+        "image": "../images/arviewer.png",
+        "description": "AR app to instantly view and interact with 3D models in real-world environments via App Clips",
+        "skills": ["Swift", "SwiftUI", "ARKit", "RealityKit", "App Clip"],
+        "websiteLink": "https://www.seenooks.com",
+        "appstoreLink": "https://apps.apple.com/app/id6752117131"
       }
 ]

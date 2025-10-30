@@ -67,7 +67,7 @@
       "timeStamp": "1 yr 6 mos",
       "achievements": [
         {
-          "description": "Design and development of native iOS applications that are published to App Store.",
+          "description": "Design and development of native iOS applications that are published through App Store.",
           "linkTitle": "",
           "link": ""
         },
@@ -94,9 +94,19 @@
       "timeStamp": "",
       "achievements": [
         {
-          "description": "Design and development of native iOS AR LIDAR application.",
+          "description": "Design and development of native iOS AR applications.",
+          "linkTitle": "",
+          "link": ""
+        }, 
+        {
+          "description": "A cutting-edge LiDAR-based application that allows users to create accurate 3D models of real-world objects with ease. Using AR Capture, users can scan items to generate detailed 3D representations, which can then be shared through a QR code, enabling others to instantly view the model without additional software.",
           "linkTitle": "Seenooks AR Capture",
           "link": "https://apps.apple.com/app/id6743469973"
+        },
+        {
+          "description": "An immersive augmented reality application that enables users to visualize 3D models in real-world environments instantly. Built with ARKit and RealityKit, it supports interactive model placement, scaling, and rotation with realistic lighting and shadows. AR Viewer leverages App Clips for instant access, allowing users to preview models without installing the full app.",
+          "linkTitle": "Seenooks AR Viewer",
+          "link": "https://apps.apple.com/app/id6752117131"
         }
       ]
       
