@@ -173,7 +173,7 @@ const Hero = ({ img }) => {
               <StyledHeroTitle component="h1">
                 <Typewriter
                   options={{
-                    strings: ["CANER ATES", "iOS Developer"],
+                    strings: ["CANER ATES", "Sr. iOS Developer"],
                     cursor: "",
                     delay: 50,
                     deleteSpeed: 20,
@@ -189,11 +189,11 @@ const Hero = ({ img }) => {
 
               <StyledResumeLink
                 href={
-                  process.env.PUBLIC_URL + "/Caner Ates Resume iOS Dev 2025en-11.pdf"
+                  process.env.PUBLIC_URL + "/Caner_Ates_iOS_Developer.pdf"
                 }
                 target="_blank"
               >
-                <Typography>Resume</Typography>
+                <Typography>Download CV</Typography>
               </StyledResumeLink>
 
 

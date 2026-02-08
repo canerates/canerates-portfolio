@@ -85,7 +85,7 @@ const About = () => {
             aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <PageHeader title="About" subText= "With a strong focus on iOS development, I’ve spent the past five years crafting native mobile apps that combine innovation with usability. My expertise in ARKit and RealityKit enables me to design advanced augmented reality experiences that bring ideas to life." />
+          <PageHeader title="About" subText= "Senior iOS Developer with nine years of software development experience, including five years focused on iOS and four years in web development. Experienced in building and maintaining high-quality iOS applications across diverse domains, with strong foundations in Swift, SwiftUI, UIKit, and modern iOS architectures. Also has hands-on experience with ARKit and RealityKit, delivering advanced features such as LiDAR scanning, real-time 3D rendering, and interactive AR experiences." />
         </StyledGenericContainer>
         <StyledAboutContainer >
         <InView threshold={0.2} triggerOnce={true}>

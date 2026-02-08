@@ -77,13 +77,6 @@ const AnchorLinks = () => {
             </StyledAnchorLink>
 
             <StyledAnchorLink
-                href={"https://www.facebook.com/cnrates"}
-                target="_blank"
-            >
-                <FacebookIcon />
-            </StyledAnchorLink>
-
-            <StyledAnchorLink
                 href={"mailto:cnrates@gmail.com"}
                 target="_blank"
             >

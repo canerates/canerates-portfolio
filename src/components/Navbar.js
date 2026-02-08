@@ -300,7 +300,7 @@ const Navbar = () => {
             <StyledResumeLink
               href={
                 process.env.PUBLIC_URL +
-                "/Caner Ates Resume iOS Dev 2025en-11.pdf"
+                "/Caner_Ates_iOS_Developer.pdf"
               }
               target="_blank"
             >
@@ -314,7 +314,7 @@ const Navbar = () => {
                   animationDuration: "2s",
                 }}
               >
-                Resume
+                Download CV
               </Typography>
             </StyledResumeLink>
           </StyledDrawerList>

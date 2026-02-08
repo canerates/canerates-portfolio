@@ -33,7 +33,7 @@ const Footer = () => {
                 }
                 className={footerInView ? "animate__animated animate__fadeInUp" : ""}
             >
-                <StyledFooterText>© 2024 Caner Ates</StyledFooterText>
+                <StyledFooterText>© 2026 Caner Ates</StyledFooterText>
             </div>
         </StyledFooterRoot>
 
