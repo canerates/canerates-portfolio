@@ -110,29 +110,24 @@
       "company": "Seenooks",
       "location": "Istanbul, Turkey",
       "startDate": "11/2024",
-      "endDate": "Present",
-      "timeStamp": "",
+      "endDate": "02/2026",
+      "timeStamp": "1 yr 4 mos",
       "achievements": [
         {
-          "description": "Sole iOS developer responsible for the design and development of native iOS AR applications.",
+          "description": "Sole iOS developer responsible for the design and development of native iOS AR applications using Swift, MVVM-C, Clean Architecture, Swift Concurrency (async/await), ARKit, and RealityKit.",
           "linkTitle": "",
           "link": ""
         }, 
         {
-          "description": "Designed and maintained the iOS app architecture with a focus on performance, stability, and scalability.",
+          "description": "Built advanced AR features including real-time LiDAR scanning, 3D model generation, and interactive object visualization.",
           "linkTitle": "",
           "link": ""
         }, 
         {
-          "description": "Built AR features using Swift (async/await), ARKit, and RealityKit, including real-time LiDAR scanning and 3D model generation.",
+          "description": "Collaborated closely with product owners and designers to deliver product-ready features.",
           "linkTitle": "",
           "link": ""
-        }, 
-        {
-          "description": "Applied MVVM-C and Clean Architecture patterns to support modularity, testability, and long-term maintainability.",
-          "linkTitle": "",
-          "link": ""
-        }, 
+        },
         {
           "description": "A cutting-edge LiDAR-based application that allows users to create accurate 3D models of real-world objects with ease. Using AR Capture, users can scan items to generate detailed 3D representations, which can then be shared through a QR code, enabling others to instantly view the model without additional software.",
           "linkTitle": "Seenooks AR Capture",
@@ -142,6 +137,38 @@
           "description": "An immersive augmented reality application that enables users to visualize 3D models in real-world environments instantly. Built with ARKit and RealityKit, it supports interactive model placement, scaling, and rotation with realistic lighting and shadows. AR Viewer leverages App Clips for instant access, allowing users to preview models without installing the full app.",
           "linkTitle": "Seenooks AR Viewer",
           "link": "https://apps.apple.com/app/id6752117131"
+        }
+      ]
+      
+    },
+    {
+      "id": "5",
+      "title": "Senior iOS Developer",
+      "company": "ARtesio",
+      "location": "Istanbul, Turkey",
+      "startDate": "02/2026",
+      "endDate": "Present",
+      "timeStamp": "",
+      "achievements": [
+        {
+          "description": "Designed and developed an Augmented Reality platform for interactive 3D product visualization.",
+          "linkTitle": "",
+          "link": ""
+        }, 
+        {
+          "description": "Architected and implemented a multi-platform product ecosystem spanning native iOS application, a web administration portal, and cloud backend services.",
+          "linkTitle": "",
+          "link": ""
+        }, 
+        {
+          "description": "Built scalable native iOS application using SwiftUI, MVVM-C, Clean Architecture, Swift Concurrency (async/await), ARKit, RealityKit and App Clips.",
+          "linkTitle": "ARtesio",
+          "link": "https://apps.apple.com/app/id6772701543"
+        }, 
+        {
+          "description": "Developed backend services using Firebase and Cloudflare Workers, implementing QR-driven WebAR and native App Clip experiences for seamless cross-platform AR product visualization.",
+          "linkTitle": "ARtesio App",
+          "link": "https://www.artesio.app/"
         }
       ]
       
