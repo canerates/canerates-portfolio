@@ -31,7 +31,7 @@
   {
     "id": "2",
     "title": "PasswOCD: Password Generator",
-    "image": "../images/passwocd.png",
+    "image": "../images/passwocd.webp",
     "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
     "skills": [
       "Swift",
@@ -45,7 +45,7 @@
   {
     "id": "3",
     "title": "MobleAR: Real-time Design 3D",
-    "image": "../images/moblear.png",
+    "image": "../images/moblear.webp",
     "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
     "skills": [
       "Swift",
