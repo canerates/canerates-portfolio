@@ -1,47 +1,76 @@
 [
-    {
-        "id": "0",
-        "title": "Chamber Interior Design",
-        "image": "../images/chamber.png",
-        "description": "Create your 3D room layout with textured floor and walls in real-time. Place your 3D furniture models and add lighting. ",
-        "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "Combine", "Metal SL"],
-        "websiteLink": "https://chamberapp.canerates.com",
-        "youtubeLink": "https://www.youtube.com/watch?v=NcTS3BAcNts"
-      },
-      {
-        "id": "1",
-        "title": "MobleAR: Real-time Design 3D",
-        "image": "../images/moblear.png",
-        "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
-        "skills": ["Swift", "SwiftUI", "RealityKit", "ARKit", "CoreData"],
-        "websiteLink": "https://moblear.canerates.com",
-        "appstoreLink": "https://apps.apple.com/app/id6479243434"
-      },
-      {
-        "id": "2",
-        "title": "PasswOCD: Password Generator",
-        "image": "../images/passwocd.png",
-        "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
-        "skills": ["Swift", "SwiftUI", "CoreData", "CloudKit"],
-        "websiteLink": "https://passwocd.canerates.com",
-        "appstoreLink": "https://apps.apple.com/app/id6529549759"
-      },
-      {
-        "id": "3",
-        "title": "Seenooks AR Capture",
-        "image": "../images/arcapture.png",
-        "description": "Real-time LiDAR scanning application to generate 3D models of real-world objects in minutes.",
-        "skills": ["Swift", "SwiftUI", "CoreData", "ARKit", "RealityKit", "Object Capture"],
-        "websiteLink": "https://www.seenooks.com",
-        "appstoreLink": "https://apps.apple.com/app/id6743469973"
-      },
-      {
-        "id": "4",
-        "title": "Seenooks AR Viewer",
-        "image": "../images/arviewer.png",
-        "description": "AR app to instantly view and interact with 3D models in real-world environments via App Clips",
-        "skills": ["Swift", "SwiftUI", "ARKit", "RealityKit", "App Clip"],
-        "websiteLink": "https://www.seenooks.com",
-        "appstoreLink": "https://apps.apple.com/app/id6752117131"
-      }
+  {
+    "id": "0",
+    "title": "Higherly: Higher or Lower",
+    "image": "../images/higherly.webp",
+    "description": "Higherly is a higher-or-lower trivia game that challenges you to compare the world around you. ",
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Swift Concurrency",
+      "Combine"
+    ],
+    "websiteLink": "https://higherly.canerates.com",
+    "appstoreLink": "https://apps.apple.com/app/id6793493539"
+  },
+  {
+    "id": "1",
+    "title": "ARtesio App",
+    "image": "../images/artesio.webp",
+    "description": "ARtesio helps eCommerce and retail brands create, manage, and scale immersive AR experiences. ",
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "RealityKit",
+      "ARKit",
+      "App Clip"
+    ],
+    "websiteLink": "https://www.artesio.app",
+    "appstoreLink": "https://apps.apple.com/app/id6772701543"
+  },
+  {
+    "id": "2",
+    "title": "PasswOCD: Password Generator",
+    "image": "../images/passwocd.png",
+    "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "CoreData",
+      "CloudKit"
+    ],
+    "websiteLink": "https://passwocd.canerates.com",
+    "appstoreLink": "https://apps.apple.com/app/id6529549759"
+  },
+  {
+    "id": "3",
+    "title": "MobleAR: Real-time Design 3D",
+    "image": "../images/moblear.png",
+    "description": "AR design environment in real-time with either uploaded USDZ models or sample models.",
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "RealityKit",
+      "ARKit",
+      "CoreData"
+    ],
+    "websiteLink": "https://moblear.canerates.com",
+    "appstoreLink": "https://apps.apple.com/app/id6479243434"
+  },
+  {
+    "id": "4",
+    "title": "Chamber Interior Design",
+    "image": "../images/chamber.webp",
+    "description": "Create your 3D room layout with textured floor and walls in real-time. Place your 3D furniture models and add lighting. ",
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "RealityKit",
+      "ARKit",
+      "Combine",
+      "Metal SL"
+    ],
+    "websiteLink": "https://chamberapp.canerates.com",
+    "youtubeLink": "https://www.youtube.com/watch?v=NcTS3BAcNts"
+  }
 ]
