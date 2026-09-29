@@ -30,16 +30,16 @@
   },
   {
     "id": "2",
-    "title": "PasswOCD: Password Generator",
-    "image": "../images/passwocd.webp",
-    "description": "Password generator application provides strong, unique passwords for each platform and account pair.",
+    "title": "PassCraft: Password Generator",
+    "image": "../images/passcraft.webp",
+    "description": "PassCraft generator application provides strong, unique passwords for each platform and account pair.",
     "skills": [
       "Swift",
       "SwiftUI",
       "CoreData",
       "CloudKit"
     ],
-    "websiteLink": "https://passwocd.canerates.com",
+    "websiteLink": "https://passcraft.canerates.com",
     "appstoreLink": "https://apps.apple.com/app/id6529549759"
   },
   {
